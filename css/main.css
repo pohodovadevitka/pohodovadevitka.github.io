@@ -1,0 +1,264 @@
+body {
+  background: #fff url(../images/bg.png) repeat-x 0 3px;
+  padding-top: 20px;
+}
+
+main {
+  background-color: #e6efef;
+}
+
+h1 {
+  color: #f2be2c;
+}
+
+h2 {
+  color: #6fd6f7;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: 0.8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+.ajax-spinner-visible {
+  position: relative;
+}
+
+.ajax-spinner-visible .ajax-spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: 32px 32px;
+  background: rgba(255, 255, 255, 0.8) url(../images/spinner.gif) no-repeat
+    center center;
+  z-index: 1000;
+}
+
+.ajax-spinner-visible .form-control:focus {
+  box-shadow: none;
+}
+
+label.required:before {
+  content: "* ";
+  color: #ff0000;
+  font-weight: bold;
+}
+
+label span.required {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+table.results tbody tr:first-child {
+  background-color: gold;
+}
+table.results tbody tr:nth-child(2) {
+  background-color: silver;
+}
+table.results tbody tr:nth-child(3) {
+  background-color: goldenrod;
+}
+
+table .number {
+  text-align: right;
+  width: 1%;
+}
+
+#countdown {
+  font-size: x-large;
+}
+
+@media print {
+  .sf-toolbar {
+    display: none !important;
+  }
+
+  .noprint {
+      display: none !important;
+  }
+
+  html, body, header, main, footer, .container {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: auto !important;
+      font-size: small !important;;
+      font-family: serif !important;;
+  }
+
+  .page-header {
+      margin: 0;
+      border: 0;
+      padding-bottom: 30px;
+  }
+
+  table.results {
+      margin: 0 auto;
+      border: none;
+      width: 100%;
+  }
+  table.results abbr {
+      text-decoration: none !important;
+      border: none !important;
+  }
+  table.results abbr[title]:after {
+      content: none !important;
+  }
+  table.results td,
+  table.results th {
+      border: 0.3pt solid #CCCCCC !important;
+  }
+
+  .sponsors a[href]:after {
+      content: none !important;
+  }
+}
+
+@page {
+  /*size: A4 portrait;*/
+  size: 210mm 297mm;
+  margin: 20mm;
+}
+
+#menu-sponsors {
+  line-height: 80px;
+  text-align: center;
+}
+
+#menu-sponsors a {
+  display: inline-block;
+  margin: 5px;
+  opacity: 0.7;
+  outline: none;
+  text-decoration: none;
+  vertical-align: middle;
+  height: 50px;
+
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+#menu-sponsors a:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  filter: grayscale(0%);
+}
+
+#menu-sponsors a[href="http://www.mannen.cz"] {
+  background-image: url(../images/sponsors/mannen.png);
+  background-size: 217px 50px;
+  width: 217px;
+}
+
+#menu-sponsors a[href="http://www.vyziva-pro-fitness.cz"] {
+  background-image: url(../images/sponsors/vyziva-pro-fitness.jpg);
+  background-size: 227px 50px;
+  width: 227px;
+}
+
+#menu-sponsors a[href="http://www.agfoods.eu"] {
+  background-image: url(../images/sponsors/agfoods.jpg);
+  background-size: 211px 50px;
+  width: 211px;
+}
+
+#menu-sponsors a[href="http://www.alfaagro.cz"] {
+  background-image: url(../images/sponsors/alfaagro.png);
+  background-size: 172px 50px;
+  width: 172px;
+}
+
+#menu-sponsors a[href="http://www.bibusmetals.cz"] {
+  background-image: url(../images/sponsors/bibusmetals.png);
+  background-size: 315px 50px;
+  width: 315px;
+}
+
+#menu-sponsors a[href="http://www.fabory.cz"] {
+  background-image: url(../images/sponsors/fabory.png);
+  background-size: 288px 50px;
+  width: 288px;
+}
+
+#menu-sponsors a[href="http://www.pbsvb.cz"] {
+  background-image: url(../images/sponsors/pbsvb.png);
+  background-size: 282px 50px;
+  width: 282px;
+}
+
+#menu-sponsors a[href="http://www.promatservis.cz"] {
+  background-image: url(../images/sponsors/promatservis.jpg);
+  background-size: 176px 50px;
+  width: 176px;
+}
+
+#menu-sponsors a[href="http://www.vbites.cz"] {
+  background-image: url(../images/sponsors/vbites.png);
+  background-size: 103px 50px;
+  width: 103px;
+}
+
+#menu-sponsors a[href="http://www.primapol.cz"] {
+  background-image: url(../images/sponsors/primapol.png);
+  background-size: 250px 50px;
+  width: 250px;
+}
+
+#menu-sponsors a[href="http://www.vbites.cz/zivot-ve-meste/2017-03-28-07-19-31/informacni-centrum-a-klub-kultury"] {
+  background-image: url(../images/sponsors/ickk.png);
+  background-size: 214px 80px;
+  width: 214px;
+  height: 80px;
+}
+
+#menu-sponsors a[href="http://www.jerabkovapekarna.cz"] {
+  background-image: url(../images/sponsors/jerabkovapekarna.jpg);
+  background-size: 142px 100px;
+  width: 142px;
+  height: 100px;
+}
+
+#menu-sponsors a[href="http://www.mtmetal.com"] {
+  background-image: url(../images/sponsors/mtmetal.png);
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+}
+
+#menu-sponsors a[href="http://www.kovyaslitiny.cz"] {
+  background-image: url(../images/sponsors/kovyaslitiny.png);
+  background-size: 67px 50px;
+  width: 67px;
+}
+
+#menu-sponsors a[href="http://www.itwcz.com"] {
+  background-image: url(../images/sponsors/itwcz.png);
+  background-size: 100px 50px;
+  width: 100px;
+}
+
+#menu-sponsors a[href="http://www.dynamicmetalsltd.cz"] {
+  background-image: url(../images/sponsors/dynamicmetals.png);
+  background-size: 380px 50px;
+  width: 380px;
+}

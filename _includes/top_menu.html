@@ -1,0 +1,91 @@
+<ul class="navbar-nav justify-content-end">
+  <li class="nav-item{% if page.url == '/propozice/' %} active{% endif %}">
+    <a class="nav-link" href="/propozice/">Propozice</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      href="http://pohodovadevitka.rajce.idnes.cz/"
+      target="_blank"
+      rel="noreferrer"
+      >Fotogalerie</a
+    >
+  </li>
+
+  <li class="nav-item{% if page.url == '/novinky/' %} active{% endif %}">
+    <a class="nav-link" href="/novinky/">Novinky</a>
+  </li>
+
+  <!--
+    <li class="nav-item">
+      <a class="nav-link" href="http://ptime.cz/startovka-pohodova-devitka-2018/">
+        Startovní listina
+      </a>
+    </li>
+  -->
+
+  <li
+    class="nav-item dropdown{% if page.url contains '/vysledky/' %} active{% endif %}"
+  >
+    <a
+      class="nav-link dropdown-toggle"
+      data-toggle="dropdown"
+      href="#"
+      role="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+      id="vysledky-top-dropdown"
+    >
+      Výsledky <span class="caret"></span>
+    </a>
+    <ul
+      class="dropdown-menu"
+      role="menu"
+      aria-labelledby="vysledky-top-dropdown"
+    >
+      {% for rocnik in site.vysledky %}
+      <li
+        class="dropdown-item{% if page.url == rocnik.url %} active{% endif %}"
+      >
+        <a class="nav-link" href="{{ rocnik.url }}">{{ rocnik.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+
+  <li
+    class="nav-item dropdown{% if page.url == '/kdo-jsme/' or page.url == '/jak-to-cele-vzniklo/' %} active{% endif %}"
+  >
+    <a
+      class="nav-link dropdown-toggle"
+      data-toggle="dropdown"
+      href="#"
+      role="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+      id="navbarDropdownMenuLink"
+    >
+      O závodě <span class="caret"></span>
+    </a>
+    <ul
+      class="dropdown-menu"
+      role="menu"
+      aria-labelledby="navbarDropdownMenuLink"
+    >
+      <li
+        class="dropdown-item{% if page.url == '/kdo-jsme/' %} active{% endif %}"
+      >
+        <a class="nav-link" href="/kdo-jsme/">Kdo jsme?</a>
+      </li>
+
+      <li
+        class="dropdown-item{% if page.url == '/kdo-jsme/' %} active{% endif %}"
+      >
+        <a class="nav-link" href="/jak-to-cele-vzniklo/">
+          Jak to celé vzniklo?
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>

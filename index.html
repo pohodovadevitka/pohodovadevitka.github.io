@@ -1,1 +1,73 @@
-Does it work?
+---
+layout: default
+title: "Úvodní stránka"
+permalink: "/"
+---
+
+<!--
+<div class="panel panel-default">
+    <div class="panel-body text-center">
+        <p class="lead" id="countdown" data-start="{$timestamp}" data-is_in_future="{$isInFuture}">
+                <span n:class="in-future, !$isInFuture ? hidden">Startujeme již za <span
+                            class="countdown-time">{$countdown}</span></span>
+            <span n:class="in-past, $isInFuture ? hidden">Start proběhl {$startDate|date:'j.n.Y'}
+                    v {$startDate|date:'G:i'}</span>
+        </p>
+        {if $isInFuture}
+        <a class="btn btn-lg btn-hot" href="{$PROP['registration.url']}" role="button">Registrovat</a>
+        {/if}
+    </div>
+</div>
+-->
+
+<div id="carousel" class="carousel slide mb-3" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/images/logo.png" alt="logo" class="d-block w-100"/>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/phd-12.jpg" alt="foto ze závodu" class="d-block w-100"/>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/phd-13.jpg" alt="foto ze závodu" class="d-block w-100"/>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/phd-14.jpg" alt="foto ze závodu" class="d-block w-100"/>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/phd-15.jpg" alt="foto ze závodu" class="d-block w-100"/>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/phd-16.jpg" alt="foto ze závodu" class="d-block w-100"/>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Vlevo</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Vpravo</span>
+    </a>
+</div>
+<!--
+{ for item in news %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-subtitle mb-2 text-muted">{{ item.perex }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="url.slug }}"
+                class="card-link"
+            >
+                Více &raquo;
+            </a>
+            <small class="text-muted float-right">
+                <i class="fas fa-calendar"></i>
+                item.created }}
+            </small>
+        </div>
+    </div>
+{ endfor %}
+-->
