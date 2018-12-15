@@ -262,3 +262,10 @@ table .number {
   background-size: 380px 50px;
   width: 380px;
 }
+
+#menu-sponsors a[href="http://www.slamamilan.cz"] {
+  background-image: url(../images/sponsors/slamamilan.png);
+  background-size: 111px 80px;
+  width: 111px;
+  height: 80px;
+}
