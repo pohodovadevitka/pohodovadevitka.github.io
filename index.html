@@ -50,24 +50,20 @@ permalink: "/"
         <span class="sr-only">Vpravo</span>
     </a>
 </div>
-<!--
-{ for item in news %}
-    <div class="card mb-3">
-        <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <p class="card-subtitle mb-2 text-muted">{{ item.perex }}</p>
-        </div>
-        <div class="card-footer">
-            <a href="url.slug }}"
-                class="card-link"
-            >
-                Více &raquo;
-            </a>
-            <small class="text-muted float-right">
-                <i class="fas fa-calendar"></i>
-                item.created }}
-            </small>
-        </div>
+
+{% for post in site.posts limit:3 %}
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
     </div>
-{ endfor %}
--->
+    <div class="card-footer">
+        <a href="{{ post.url }}" class="card-link">
+            Více &raquo;
+        </a>
+        <small class="text-muted float-right">
+            <i class="fas fa-calendar"></i>
+            {{ post.date | date_to_string }}
+        </small>
+    </div>
+</div>
+{% endfor %}
