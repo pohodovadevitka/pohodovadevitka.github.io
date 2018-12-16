@@ -1,0 +1,34 @@
+<div class="table-responsive">
+  <table class="table table-sm table-hover results">
+    <thead>
+      <tr>
+        <th><abbr title="absolutní pořadí">poř.</abbr></th>
+        <th><abbr title="kategorie">kat.</abbr></th>
+        <th><abbr title="pořadí v kategorii">poř.&nbsp;k.</abbr></th>
+        <th><abbr title="startovní číslo">s.&nbsp;č.</abbr></th>
+        <th class="name">jméno</th>
+        <th class="number">čas</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in site.data[include.year][include.discipline] %}
+      <tr>
+        <td>{{ row.positionAbsolute }}</td>
+        <td>{{ row.category }}</td>
+        <td>{{ row.positionCategory }}</td>
+        <td>{{ row.number }}</td>
+        <td class="name">
+          <b>{{ row.name }}</b> ({{ row.year }}) {{ row.club }}
+        </td>
+        <td class="number">
+          {% if row.time == "DNF" %}
+            <abbr title="nedokončil(a) závod">DNF</abbr>
+          {% else %}
+            <b>{{ row.time }}</b>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
