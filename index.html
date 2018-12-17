@@ -62,7 +62,7 @@ permalink: "/"
         </a>
         <small class="text-muted float-right">
             <i class="fas fa-calendar"></i>
-            {{ post.date | date_to_string }}
+            {{ post.date | date: "%d.%m. %Y" }}
         </small>
     </div>
 </div>
