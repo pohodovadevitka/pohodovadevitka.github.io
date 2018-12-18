@@ -126,7 +126,6 @@ table .number {
 }
 
 @page {
-  /*size: A4 portrait;*/
   size: 210mm 297mm;
   margin: 20mm;
 }
@@ -162,109 +161,91 @@ table .number {
 }
 /* Begin of "Genereated with bin/sponsors.js" */
 #menu-sponsors a[href="http://www.agfoods.eu"] {
-  background-image: url(../images/sponsors/agfoods.jpg);
   background-size: 216px 51px;
   width: 216px;
   height: 51px;
 }
 #menu-sponsors a[href="http://www.alfaagro.cz"] {
-  background-image: url(../images/sponsors/alfaagro.png);
   background-size: 195px 56px;
   width: 195px;
   height: 56px;
 }
 #menu-sponsors a[href="http://www.bibusmetals.cz"] {
-  background-image: url(../images/sponsors/bibusmetals.png);
   background-size: 263px 42px;
   width: 263px;
   height: 42px;
 }
 #menu-sponsors a[href="http://www.dynamicmetalsltd.cz"] {
-  background-image: url(../images/sponsors/dynamicmetals.png);
   background-size: 289px 38px;
   width: 289px;
   height: 38px;
 }
 #menu-sponsors a[href="http://www.fabory.cz"] {
-  background-image: url(../images/sponsors/fabory.png);
   background-size: 252px 44px;
   width: 252px;
   height: 44px;
 }
 #menu-sponsors a[href="http://www.vbites.cz/zivot-ve-meste/2017-03-28-07-19-31/informacni-centrum-a-klub-kultury"] {
-  background-image: url(../images/sponsors/ickk.png);
   background-size: 172px 64px;
   width: 172px;
   height: 64px;
 }
 #menu-sponsors a[href="http://www.itwcz.com"] {
-  background-image: url(../images/sponsors/itwcz.png);
   background-size: 148px 74px;
   width: 148px;
   height: 74px;
 }
 #menu-sponsors a[href="http://www.jerabkovapekarna.cz"] {
-  background-image: url(../images/sponsors/jerabkovapekarna.jpg);
   background-size: 125px 88px;
   width: 125px;
   height: 88px;
 }
 #menu-sponsors a[href="http://www.kovyaslitiny.cz"] {
-  background-image: url(../images/sponsors/kovyaslitiny.png);
   background-size: 121px 91px;
   width: 121px;
   height: 91px;
 }
 #menu-sponsors a[href="http://www.mannen.cz"] {
-  background-image: url(../images/sponsors/kargoma.png);
   background-size: 219px 50px;
   width: 219px;
   height: 50px;
 }
 #menu-sponsors a[href="http://www.mtmetal.com"] {
-  background-image: url(../images/sponsors/mtmetal.png);
   background-size: 105px 104px;
   width: 105px;
   height: 104px;
 }
 #menu-sponsors a[href="http://www.pbsvb.cz"] {
-  background-image: url(../images/sponsors/pbsvb.png);
   background-size: 249px 44px;
   width: 249px;
   height: 44px;
 }
 #menu-sponsors a[href="http://www.primapol.cz"] {
-  background-image: url(../images/sponsors/primapol.png);
   background-size: 235px 47px;
   width: 235px;
   height: 47px;
 }
 #menu-sponsors a[href="http://www.promatservis.cz"] {
-  background-image: url(../images/sponsors/promatservis.jpg);
   background-size: 197px 56px;
   width: 197px;
   height: 56px;
 }
 #menu-sponsors a[href="http://www.slamamilan.cz"] {
-  background-image: url(../images/sponsors/slamamilan.png);
   background-size: 124px 89px;
   width: 124px;
   height: 89px;
 }
 #menu-sponsors a[href="http://www.vbites.cz"] {
-  background-image: url(../images/sponsors/vbites.png);
   background-size: 151px 73px;
   width: 151px;
   height: 73px;
 }
 #menu-sponsors a[href="http://www.vyziva-pro-fitness.cz"] {
-  background-image: url(../images/sponsors/vyziva-pro-fitness.jpg);
   background-size: 224px 49px;
   width: 224px;
   height: 49px;
 }
 #menu-sponsors a[href="http://www.zamecnictvinemec.cz"] {
-  background-image: url(../images/sponsors/zamecnictvinemec.png);
   background-size: 212px 52px;
   width: 212px;
   height: 52px;
