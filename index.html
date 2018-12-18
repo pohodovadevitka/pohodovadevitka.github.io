@@ -83,18 +83,16 @@ permalink: "/"
 
 {% if site.posts %}
 <div class="card-deck">
-  {% for post in site.posts limit:3 %}
-  <div class="card">
-    <div class="card-body">
-      <p class="card-title">{{ post.title }}</p>
-    </div>
-    <div class="card-footer">
-      <a href="{{ post.url }}" class="card-link"> Více &raquo; </a>
-      <small class="text-muted float-right">
-        <i class="fas fa-calendar"></i> {{ post.date | date: "%d.%m. %Y" }}
-      </small>
-    </div>
-  </div>
-  {% endfor %}
+  {% if site.posts.size > 0 %}
+    {% include post-card.html index=0 %}
+  {% endif %}
+  {% if site.posts.size > 1 %}
+    <div class="w-100 d-none d-sm-block d-lg-none"></div>
+    {% include post-card.html index=1 %}
+  {% endif %}
+  {% if site.posts.size > 2 %}
+    <div class="w-100 d-none d-sm-block d-lg-none"></div>
+    {% include post-card.html index=2 %}
+  {% endif %}
 </div>
 {% endif %}

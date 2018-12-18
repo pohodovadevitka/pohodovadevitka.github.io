@@ -1,0 +1,11 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <p class="card-title">{{ site.posts[include.index].title }}</p>
+  </div>
+  <div class="card-footer">
+    <a href="{{ site.posts[include.index].url }}" class="card-link"> Více &raquo; </a>
+    <small class="text-muted float-right">
+      <i class="fas fa-calendar"></i> {{ site.posts[include.index].date | date: "%d.%m. %Y" }}
+    </small>
+  </div>
+</div>
