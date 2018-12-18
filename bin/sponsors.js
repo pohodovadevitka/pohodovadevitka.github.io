@@ -26,6 +26,7 @@ const URL = {
   "mtmetal.png": "http://www.mtmetal.com",
   "kovyaslitiny.png": "http://www.kovyaslitiny.cz",
   "itwcz.png": "http://www.itwcz.com",
+  "zamecnictvinemec.png": "http://www.zamecnictvinemec.cz",
   "dynamicmetals.png": "http://www.dynamicmetalsltd.cz",
   "slamamilan.png": "http://www.slamamilan.cz",
 };

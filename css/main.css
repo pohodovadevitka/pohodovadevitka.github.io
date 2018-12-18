@@ -216,7 +216,7 @@ table .number {
   height: 91px;
 }
 #menu-sponsors a[href="http://www.mannen.cz"] {
-  background-image: url(../images/sponsors/mannen.png);
+  background-image: url(../images/sponsors/kargoma.png);
   background-size: 219px 50px;
   width: 219px;
   height: 50px;
@@ -262,5 +262,11 @@ table .number {
   background-size: 224px 49px;
   width: 224px;
   height: 49px;
+}
+#menu-sponsors a[href="http://www.zamecnictvinemec.cz"] {
+  background-image: url(../images/sponsors/zamecnictvinemec.png);
+  background-size: 212px 52px;
+  width: 212px;
+  height: 52px;
 }
 /* End of "Genereated with bin/sponsors.js" */
