@@ -1,0 +1,75 @@
+---
+---
+body {
+  background: #fff url(../images/bg.png) repeat-x 0 3px;
+  padding-top: 20px;
+}
+main {
+  background-color: #e6efef;
+}
+h1 {
+  color: #f2be2c;
+}
+h2 {
+  color: #6fd6f7;
+}
+
+table.results tbody tr {
+  :first-child {
+    background-color: gold;
+  }
+  :nth-child(2) {
+    background-color: silver;
+  }
+  :nth-child(3) {
+    background-color: goldenrod;
+  }
+}
+
+table .number {
+  text-align: right;
+  width: 1%;
+}
+
+#countdown {
+  font-size: x-large;
+}
+
+@media print {
+  table.results {
+    margin: 0;
+    abbr {
+      text-decoration: none !important;
+      border: none !important;
+    }
+    abbr[title]:after {
+      content: none !important;
+    }
+  }
+
+  @page {
+    size: 210mm 297mm;
+  }
+}
+
+.btn-hot {
+  color: #fff;
+  background-color: #db5566;
+  border-bottom: 2px solid #af4451;
+  :hover,
+  :focus {
+    color: #fff;
+    background-color: #df6a78;
+    border-bottom: 2px solid #b25560;
+    outline: none;
+  }
+  :active,
+  .active {
+    color: #fff;
+    background-color: #c04b59;
+    border-top: 2px solid #9a3c47;
+    margin-top: 2px;
+  }
+}
+
+@import "sponsors"
