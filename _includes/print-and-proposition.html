@@ -1,17 +1,23 @@
-<div class="btn-toolbar float-right d-print-none py-sm-3" role="toolbar">
+<div class="btn-toolbar justify-content-end d-print-none" role="toolbar">
   <a
     href="#"
     class="btn btn-md btn-success mr-2"
     onclick="window.print(); return false;"
+    title="Vytisknout"
   >
-    <span class="glyphicon glyphicon-print"></span> Vytisknout
+    <i class="fas fa-print"></i>
+    <span class="sr-only">Vytisknout</span>
   </a>
   <a
     class="btn btn-md btn-secondary"
     href="/files/Propozice-{{ page.year }}.pdf"
     target="_blank"
     rel="noopener"
+    title="Stáhnout propozice jako PDF"
   >
-    Propozice
+    <i class="fas fa-file-download"></i>
+    <span class="sr-only">Stáhnout propozice jako PDF</span>
   </a>
 </div>
+
+<hr>
