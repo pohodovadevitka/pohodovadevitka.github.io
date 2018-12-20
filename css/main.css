@@ -130,6 +130,26 @@ table .number {
   margin: 20mm;
 }
 
+.btn-hot {
+  color: #fff;
+  background-color: #db5566;
+  border-bottom: 2px solid #af4451;
+}
+.btn-hot:hover,
+.btn-hot:focus {
+  color: #fff;
+  background-color: #df6a78;
+  border-bottom: 2px solid #b25560;
+  outline: none;
+}
+.btn-hot:active,
+.btn-hot.active {
+  color: #fff;
+  background-color: #c04b59;
+  border-top: 2px solid #9a3c47;
+  margin-top: 2px;
+}
+
 #menu-sponsors {
   line-height: 80px;
   text-align: center;
