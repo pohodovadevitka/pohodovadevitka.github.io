@@ -20,23 +20,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   kategorie, který se koná v září, týden po bítešských hodech.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.pohodovadevitka.cz/" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-github_username: pohodovadevitka
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
 permalink: pretty
-
-sass:
-  sass_dir: _sass
-  style: compressed
-#  load_paths:
-#    - _sass
-#    - node_modules
 
 collections:
   vysledky:
@@ -47,14 +37,5 @@ collections:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-#  - node_modules
-  - LICENSE
-  - README.md
-  - package.json
-  - package-lock.json
   - Gemfile
   - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
