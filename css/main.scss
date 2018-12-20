@@ -14,14 +14,14 @@ h2 {
   color: #6fd6f7;
 }
 
-table.results tbody tr {
-  :first-child {
+table.results tbody {
+  tr:first-child {
     background-color: gold;
   }
-  :nth-child(2) {
+  tr:nth-child(2) {
     background-color: silver;
   }
-  :nth-child(3) {
+  tr:nth-child(3) {
     background-color: goldenrod;
   }
 }
