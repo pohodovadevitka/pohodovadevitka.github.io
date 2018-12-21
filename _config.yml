@@ -45,3 +45,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - _bin
+  - _sponsors_original

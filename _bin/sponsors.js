@@ -1,67 +1,107 @@
-const process = require('child_process');
-const path = require('path');
-const fs = require('fs');
+const process = require("child_process");
+const path = require("path");
+const fs = require("fs");
+
+const point = (w, h) => ({
+  h: Math.round(Number(h)),
+  w: Math.round(Number(w))
+})
 
 const fitToArea = (area, rect) => {
   const k = Math.sqrt(area / (rect.w * rect.h));
-  return {
-    w: Math.round(rect.w * k),
-    h: Math.round(rect.h * k)
-  };
+  return point(rect.w * k, rect.h * k);
 };
 
-const URL = {
-  "mannen.png": "http://www.mannen.cz",
-  "vyziva-pro-fitness.jpg": "http://www.vyziva-pro-fitness.cz",
-  "agfoods.jpg": "http://www.agfoods.eu",
-  "alfaagro.png": "http://www.alfaagro.cz",
-  "bibusmetals.png": "http://www.bibusmetals.cz",
-  "fabory.png": "http://www.fabory.cz",
-  "pbsvb.png": "http://www.pbsvb.cz",
-  "promatservis.jpg": "http://www.promatservis.cz",
-  "vbites.png": "http://www.vbites.cz",
-  "primapol.png": "http://www.primapol.cz",
-  "ickk.png": "http://www.vbites.cz/zivot-ve-meste/2017-03-28-07-19-31/informacni-centrum-a-klub-kultury",
-  "jerabkovapekarna.jpg": "http://www.jerabkovapekarna.cz",
-  "mtmetal.png": "http://www.mtmetal.com",
-  "kovyaslitiny.png": "http://www.kovyaslitiny.cz",
-  "itwcz.png": "http://www.itwcz.com",
-  "zamecnictvinemec.png": "http://www.zamecnictvinemec.cz",
-  "dynamicmetals.png": "http://www.dynamicmetalsltd.cz",
-  "slamamilan.png": "http://www.slamamilan.cz",
-};
-const images = [];
+const items = [
+  {
+    file: "kargoma.png",
+    url: "http://www.mannen.cz"
+  },
+  {
+    file: "vyziva-pro-fitness.jpg",
+    url: "http://www.vyziva-pro-fitness.cz"
+  },
+  {
+    file: "agfoods.jpg",
+    url: "http://www.agfoods.eu"
+  },
+  {
+    file: "alfaagro.png",
+    url: "http://www.alfaagro.cz"
+  },
+  {
+    file: "bibusmetals.png",
+    url: "http://www.bibusmetals.cz"
+  },
+  {
+    file: "fabory.png",
+    url: "http://www.fabory.cz"
+  },
+  {
+    file: "pbsvb.png",
+    url: "http://www.pbsvb.cz"
+  },
+  {
+    file: "promatservis.jpg",
+    url: "http://www.promatservis.cz"
+  },
+  {
+    file: "vbites.png",
+    url: "http://www.vbites.cz"
+  },
+  {
+    file: "primapol.png",
+    url: "http://www.primapol.cz"
+  },
+  {
+    file: "ickk.png",
+    url: "http://www.vbites.cz/zivot-ve-meste/2017-03-28-07-19-31/informacni-centrum-a-klub-kultury"
+  },
+  {
+    file: "jerabkovapekarna.jpg",
+    url: "http://www.jerabkovapekarna.cz"
+  },
+  {
+    file: "mtmetal.png",
+    url: "http://www.mtmetal.com"
+  },
+  {
+    file: "kovyaslitiny.png",
+    url: "http://www.kovyaslitiny.cz"
+  },
+  {
+    file: "itwcz.png",
+    url: "http://www.itwcz.com"
+  },
+  {
+    file: "zamecnictvinemec.png",
+    url: "http://www.zamecnictvinemec.cz"
+  },
+  {
+    file: "dynamicmetals.png",
+    url: "http://www.dynamicmetalsltd.cz"
+  },
+  {
+    file: "slamamilan.png",
+    url: "http://www.slamamilan.cz"
+  }
+];
+
 const AREA = 220 * 50;
-const imagesDirectory = path.resolve(__dirname, '../images/sponsors');
+const srcDir = "../_sponsors_original"
+const dstDir =  "../images/sponsors"
 
-fs.readdir(imagesDirectory, (err, files) => {
-  if (err) throw e;
+for (const item of items) {
+  const srcFile = path.resolve(__dirname, srcDir, item.file);
+  const dstFile = path.resolve(__dirname, dstDir, item.file);
+  const size = process.execSync(`convert ${srcFile} -print "%wx%h" /dev/null`)
+    .toString()
+    .split("x");
+  const srcRect = point(size[0], size[1]);
+  const dstRect = fitToArea(AREA, srcRect);
 
-  // console.table(files);
-
-  files.forEach((file) => {
-    const image = path.resolve(imagesDirectory, file);
-    const size = process.execSync(`convert ${image} -print "%wx%h" /dev/null`)
-        .toString()
-        .split('x')
-        .map(x => Math.round(Number(x)));
-    const rect = {w: size[0], h: size[1]};
-    images.push({
-      file: file,
-      original: rect,
-      resized: fitToArea(AREA, rect),
-    })
-  });
-
-  const css = images.filter((item) => item.file in URL)
-    .map((item) => `#menu-sponsors a[href="${URL[item.file]}"] {
-  background-image: url(../images/sponsors/${item.file});
-  background-size: ${item.resized.w}px ${item.resized.h}px;
-  width: ${item.resized.w}px;
-  height: ${item.resized.h}px;
+  process.execSync(`convert ${srcFile} -resize ${dstRect.w}x${dstRect.h} ${dstFile}`);
+  console.log(
+    `a[href="${item.url}"] { width: ${dstRect.w}px; height: ${dstRect.h}px; }`
+  );
 }
-`).join("");
-
-  console.log(css);
-});
-
