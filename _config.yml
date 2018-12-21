@@ -25,6 +25,7 @@ url: "https://www.pohodovadevitka.cz/" # the base hostname & protocol for your s
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 sass:
   sass_dir: _sass
