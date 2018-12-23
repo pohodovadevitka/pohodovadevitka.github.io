@@ -2,26 +2,35 @@
 <html lang="cs">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    {% feed_meta %}
-    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="pohodovadevitka.cz" />
+    <meta property="og:title" content="{{ page.title }} - Pohodová Devítka - Běžecký závod Velké Bíteše" />
+    <meta property="og:image" content="{{ site:url }}/images/logo.jpg" />
+    <meta property="og:url" content="{{ site:url }}" />
     {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
+      <meta name="description" content="{{ page.description }}" />
+      <meta property="og:description" content="{{ page.description }}" />
+    {% else %}
+      <meta name="description" content="{{ page.description }}" />
+      <meta property="og:description" content="Zveme Vás na běžecký závod ve Velké Bíteše, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří vždy 9km, pro děti pořádáme kratší závod." />
     {% endif %}
-    {% if page.keywords %}
-    <meta name="keywords" content="{{ page.keywords }}" />
-    {% endif %}
-    <meta
-      name="norton-safeweb-site-verification"
-      content="i-2dkv85i5qfaxk581tmni1j73udnwfg7lwfzvv08nbe3t351lgsg5e81xexvyrx-h1b0pd3s0nxyir6f41ley5vmkknxfj8rqqx7h4b3x33uliqfieyvmm-5rlo7ose"
-    />
+    <meta name="keywords" content="{{ page.keywords }},běžecký závod,běh,running" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index,follow,snippet,archive" />
+
+    <meta name="google-site-verification" content="pJ7I-HwWm8YUTXRSjXXTFZpRgMFA8ag9hI9fWOMQB3s" />
+    <meta name="norton-safeweb-site-verification" content="i-2dkv85i5qfaxk581tmni1j73udnwfg7lwfzvv08nbe3t351lgsg5e81xexvyrx-h1b0pd3s0nxyir6f41ley5vmkknxfj8rqqx7h4b3x33uliqfieyvmm-5rlo7ose"/>
+
+    <meta name="theme-color" content="#ffffff">
 
     <title>{{ page.title }} - PoHodová devítka</title>
 
     <base href="{{ site.url }}" />
+
+    {% feed_meta %}
 
     {% if page.previous.url %}
     <link rel="prev" href="{{ page.previous.url }}" />
