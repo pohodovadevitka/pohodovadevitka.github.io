@@ -13,10 +13,10 @@
       <meta name="description" content="{{ page.description }}">
       <meta property="og:description" content="{{ page.description }}">
     {% else %}
-      <meta name="description" content="Běžecký závod ve Velké Bíteše, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.">
-      <meta property="og:description" content="Běžecký závod ve Velké Bíteše, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.">
+      <meta name="description" content="Běžecký závod ve Velké Bíteši, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.">
+      <meta property="og:description" content="Běžecký závod ve Velké Bíteši, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.">
     {% endif %}
-    <meta name="keywords" content="{{ page.keywords }},běžecký závod,běžecké závody,běh,velká bíteš">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }},{% endif %}běžecký závod,běžecké závody,běh,velká bíteš">
 
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
