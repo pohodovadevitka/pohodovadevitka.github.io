@@ -5,6 +5,12 @@ permalink: "/"
 pictures: ["12", "13", "14", "15", "16"]
 ---
 
+<h1 class="py-3">PoHodová devítka <small class="text-muted">běžecký závod Velké Bíteše</small></h1>
+
+<p class="lead">
+  Běžecký závod ve Velké Bíteši, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.
+</p>
+
 <!--
   <div class="panel panel-default">
       <div class="panel-body text-center">
@@ -23,17 +29,6 @@ pictures: ["12", "13", "14", "15", "16"]
 
 <div id="carousel" class="carousel slide mb-3" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <picture>
-        <source srcset="/images/logo.webp" type="image/webp" />
-        <source srcset="/images/logo.jpg" type="image/jpg" />
-        <img
-          src="/images/logo.jpg"
-          alt="foto ze závodu"
-          class="d-block w-100"
-        >
-      </picture>
-    </div>
     {% for i in page.pictures %}
     <div class="carousel-item">
       <picture>
@@ -42,11 +37,30 @@ pictures: ["12", "13", "14", "15", "16"]
         <img
           src="/images/phd-{{ i }}.jpg"
           alt="foto ze závodu"
-          class="d-block w-100"
+          class="d-block w-100 img-fluid"
+          width="900"
+          height="500"
+          decoding="async"
+          async="on"
         >
       </picture>
     </div>
     {% endfor %}
+    <div class="carousel-item active">
+      <picture>
+        <source srcset="/images/logo.webp" type="image/webp" />
+        <source srcset="/images/logo.jpg" type="image/jpg" />
+        <img
+          src="/images/logo.jpg"
+          alt="foto ze závodu"
+          class="d-block w-100 img-fluid"
+          width="1001"
+          height="547"
+          decoding="async"
+          async="on"
+        >
+      </picture>
+    </div>
   </div>
   <a
     class="carousel-control-prev"
