@@ -14,6 +14,12 @@ h2 {
   color: #6fd6f7;
 }
 
+#carousel img {
+  max-height: 500px;
+  margin: 0 auto;
+  background-color: white;
+}
+
 table.results tbody {
   tr:first-child {
     background-color: gold;
