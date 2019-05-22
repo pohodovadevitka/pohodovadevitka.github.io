@@ -1,14 +1,14 @@
 ---
 layout:      post
-title:       "Křižínkov běží - První ročník běžeckých závodů pro širokou veřejnost"
+title:       "Křižínkov běží - První ročník běžeckých závodů"
 published:   true
 description: "Křižínkov běží - První ročník běžeckých závodů pro širokou veřejnost"
 date:        "2019-05-22T20:00:00"
 ---
 
 <div class="container py-3">
-  <div class="btn-toolbar justify-content-end d-print-none" role="toolbar">
-    <a class="btn btn-md btn-secondary" href="/files/krizinkov-bezi-2019.jpg" target="_blank" rel="noopener">
+  <div class="btn-toolbar justify-content-center d-print-none" role="toolbar">
+    <a class="btn btn-lg btn-success" href="/files/krizinkov-bezi-2019.jpg" target="_blank" rel="noopener">
       <i class="fas fa-file-download"></i>
       Stáhnout plakát
     </a>
