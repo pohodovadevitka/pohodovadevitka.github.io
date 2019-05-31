@@ -5,6 +5,9 @@ published:   true
 description: "Křižínkov běží - První ročník běžeckých závodů pro širokou veřejnost"
 date:        "2019-05-22T20:00:00"
 ---
+## Termín
+
+<strong class="red">22. červen 2019</strong>
 
 ## Kategorie
 
