@@ -2,17 +2,43 @@
 layout: default
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/NewsArticle">
+<script type="application/ld+json">
+  { "@context": "http://schema.org"
+  , "@type": "NewsArticle"
+  , "articleBody": { "@id": "{{ site.url }}{{ page.url }}#article"
+                   }
+  , "author": { "@type": "Person"
+              , "name": "{{ page.author | default: "Zdeněk Kundera" }}"
+              }
+  , "dateModified": "{{ page.date | date_to_xmlschema }}"
+  , "datePublished": "{{ page.date | date_to_xmlschema }}"
+  , "headline": "{{ page.title }}"
+  , "image": { "@type": "ImageObject"
+             , "url": "{{ site.url }}/images/logo.svg"
+             , "width": 1100
+             , "height": 610
+             }
+  , "mainEntityOfPage": { "@type": "WebPage"
+                        , "@id": "{{ site.url }}/novinky/"
+                        }
+  , "name": "{{ page.title }}"
+  , "url": "{{ site.url }}{{ page.url }}"
+  , "publisher": { "@type": "Organization"
+                 , "name": "Pohodová Devítka"
+                 }
+</script>
+
+<article class="post">
   <header>
     <div class="text-muted text-right">
       <i class="fas fa-calendar"></i>
       Publikováno
-      <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%-m.%Y %k:%M" }}</time>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%-m.%Y %k:%M" }}</time>
     </div>
-    <h1 class="py-3" itemprop="name">{{ page.title }}</h1>
+    <h1 class="py-3">{{ page.title }}</h1>
   </header>
 
-  <div itemprop="articleBody">
+  <div id="article">
     {{ content }}
   </div>
 
@@ -22,12 +48,12 @@ layout: default
       <ul class="pagination justify-content-center">
         {% if page.previous.url %}
         <li class="page-item">
-          <a itemprop="url" class="page-link" href="{{ page.previous.url }}"> Předchozí </a>
+          <a class="page-link" href="{{ page.previous.url }}"> Předchozí </a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="page-item">
-          <a itemprop="url" class="page-link" href="{{ page.next.url }}"> Následující </a>
+          <a class="page-link" href="{{ page.next.url }}"> Následující </a>
         </li>
         {% endif %}
       </ul>
