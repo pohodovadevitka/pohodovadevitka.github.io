@@ -3,20 +3,13 @@ layout: default
 title: "Výsledky ročníku 2017"
 permalink: "/vysledky/2017/"
 year: "2016"
+keywords: "výsledky 2016"
 ---
 
 {% include print-and-proposition.html %}
 
 <h1 class="py-3">{{ page.title }}</h1>
 
-<h2 class="py-3">Závod 9&nbsp;km</h2>
-
-{% include results.html year="2017" discipline="9km" %}
-
-<h2 class="py-3">Závod 1100&nbsp;m</h2>
-
-{% include results.html year="2017" discipline="1100m" %}
-
-<h2 class="py-3">Závod 500&nbsp;m</h2>
-
-{% include results.html year="2017" discipline="500m" %}
+{% include results.html year="2017" discipline="9km" title="Závod 9&nbsp;km" %}
+{% include results.html year="2017" discipline="1100m" title="Závod 1100&nbsp;m" %}
+{% include results.html year="2017" discipline="500m" title="Závod 500&nbsp;m" %}
