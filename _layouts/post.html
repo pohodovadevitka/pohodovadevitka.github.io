@@ -13,7 +13,7 @@ layout: default
   , "datePublished": "{{ page.date | date_to_xmlschema }}"
   , "headline": {{ page.title | jsonify }}
   , "image": { "@type": "ImageObject"
-             , "url": "{{ site.url }}/images/logo.svg"
+             , "url": "{{ site.logo_large }}"
              , "width": 1100
              , "height": 610
              }
@@ -25,6 +25,9 @@ layout: default
   , "url": "{{ site.url }}{{ page.url }}"
   , "publisher": { "@type": "Organization"
                  , "name": "Pohodová Devítka"
+                 , "logo": { "@type": "ImageObject"
+                           , "url": "{{ site.logo_large }}"
+                           }
                  }
   }
 </script>

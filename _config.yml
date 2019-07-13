@@ -20,6 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   kategorie, který se koná v září, týden po bítešských hodech.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.pohodovadevitka.cz" # the base hostname & protocol for your site, e.g. http://example.com
+logo_large: http://www.pohodovadevitka.cz/images/logo.png
 
 # Build settings
 markdown: kramdown
