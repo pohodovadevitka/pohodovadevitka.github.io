@@ -5,8 +5,7 @@ layout: default
 <script type="application/ld+json">
   { "@context": "http://schema.org"
   , "@type": "NewsArticle"
-  , "articleBody": { "@id": "{{ site.url }}{{ page.url }}#article"
-                   }
+  , "articleBody": "{{ content }}"
   , "author": { "@type": "Person"
               , "name": "{{ page.author | default: "Zdeněk Kundera" }}"
               }
@@ -18,6 +17,7 @@ layout: default
              , "width": 1100
              , "height": 610
              }
+  , "inLanguage": "Czech"
   , "mainEntityOfPage": { "@type": "WebPage"
                         , "@id": "{{ site.url }}/novinky/"
                         }
