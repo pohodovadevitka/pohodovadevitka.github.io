@@ -5,13 +5,13 @@ layout: default
 <script type="application/ld+json">
   { "@context": "http://schema.org"
   , "@type": "NewsArticle"
-  , "articleBody": "{{ content | strip_html | strip_newlines }}"
+  , "articleBody": "{{ content | jsonify }}"
   , "author": { "@type": "Person"
               , "name": "{{ page.author | default: "Zdeněk Kundera" }}"
               }
   , "dateModified": "{{ page.date | date_to_xmlschema }}"
   , "datePublished": "{{ page.date | date_to_xmlschema }}"
-  , "headline": "{{ page.title | strip_html | strip_newlines }}"
+  , "headline": "{{ page.title | strip_jsonify }}"
   , "image": { "@type": "ImageObject"
              , "url": "{{ site.url }}/images/logo.svg"
              , "width": 1100
@@ -21,7 +21,7 @@ layout: default
   , "mainEntityOfPage": { "@type": "WebPage"
                         , "@id": "{{ site.url }}/novinky/"
                         }
-  , "name": "{{ page.title | strip_html | strip_newlines }}"
+  , "name": "{{ page.title | jsonify }}"
   , "url": "{{ site.url }}{{ page.url }}"
   , "publisher": { "@type": "Organization"
                  , "name": "Pohodová Devítka"
