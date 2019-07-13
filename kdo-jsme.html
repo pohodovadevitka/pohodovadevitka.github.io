@@ -4,9 +4,56 @@ layout: default
 permalink: "/kdo-jsme/"
 ---
 
+<script type="application/ld+json">
+  { "@context": "http://schema.org"
+  , "@type": "Organization"
+  , "email": ["bitesskybeh@seznam.cz", "pohodovadevitka@gmail.com"]
+  , "description": "{{ site.description }}"
+  , "name": "{{ site.title }}"
+  , "sameAs": [ "facebook.com/pohodovadevitka"
+              , "twitter.com/pohodovadevitka"
+              , "pohodovadevitka.rajce.idnes.cz"
+              ]
+  , "url": "{{ site.url }}"
+  }
+</script>
+<script type="application/ld+json">
+  { "@context": "https://schema.org"
+  , "@type": "Person"
+  , "email": "zkundera@seznam.cz"
+  , "gender": "male"
+  , "image": "{{ site.url }}files/zdenda.jpg"
+  , "name": "Zdeněk Kundera"
+  , "nationality": "Czech Republic"
+  , "telephone": "+420 777-612-344"
+  , "url": "{{ site.url }}kdo-jsme/#zdenda"
+  }
+</script>
+<script type="application/ld+json">
+  { "@context": "https://schema.org"
+  , "@type": "Person"
+  , "gender": "male"
+  , "image": "{{ site.url }}files/martin.jpg"
+  , "name": "Martin Macholán"
+  , "nationality": "Czech Republic"
+  , "url": "{{ site.url }}kdo-jsme/#martin"
+  }
+</script>
+<script type="application/ld+json">
+  { "@context": "https://schema.org"
+  , "@type": "Person"
+  , "gender": "male"
+  , "image": "{{ site.url }}files/ondra.jpg"
+  , "name": "Ondřej Plechatý"
+  , "nationality": "Czech Republic"
+  , "telephone": "+420 731-425-676"
+  , "url": "{{ site.url }}kdo-jsme/#ondra"
+  }
+</script>
+
 <h1 class="py-3">Kdo jsme</h1>
 
-<div class="card my-3">
+<div class="card my-3" id="zdenda">
   <div class="card-body">
     <a
       class="float-left mr-3"
@@ -20,7 +67,7 @@ permalink: "/kdo-jsme/"
         alt="Zdeněk Kundera"
       >
     </a>
-    <h2 id="kundera">Zdeněk Kundera</h2>
+    <h2>Zdeněk Kundera</h2>
     <p>
       Běhá zhruba od roku 2007, od doby, kdy přestal hrát fotbal. Od roku 2011
       člen <a href="http://mslavia.cz/">AC Moravské Slavie Brno</a>. Soupeři ho
@@ -37,7 +84,7 @@ permalink: "/kdo-jsme/"
   </div>
 </div>
 
-<div class="card my-3">
+<div class="card my-3" id="macholan">
   <div class="card-body">
     <a
       class="float-left mr-3"
@@ -53,7 +100,7 @@ permalink: "/kdo-jsme/"
         height="301"
       >
     </a>
-    <h2 id="macholan">Martin Macholán</h2>
+    <h2>Martin Macholán</h2>
     <p>
       Běhu se začal věnovat cca před pěti lety a to na nátlak dlouholetého
       fotbalového parťáka a kamaráda – Zdeňka Kundery jednoho večera u oroseného
@@ -72,7 +119,7 @@ permalink: "/kdo-jsme/"
   </div>
 </div>
 
-<div class="card my-3">
+<div class="card my-3" id="plechaty">
   <div class="card-body">
     <a
       class="float-left mr-3"
@@ -88,7 +135,7 @@ permalink: "/kdo-jsme/"
         height="301"
       >
     </a>
-    <h2 id="plechaty">Ondřej Plechatý</h2>
+    <h2>Ondřej Plechatý</h2>
     <p>
       K běhání ho cca v roce 2009 přivedl velký kamarád, parťák,
       spoluorganizátor PoHodové devítky Zdeněk Kundera a probudil v něm doposud
