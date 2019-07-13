@@ -2,28 +2,34 @@
 layout: default
 ---
 
-<article class="post" role="article">
-  <h1 class="py-3">{{ page.title }}</h1>
+<article class="post" role="article" itemscope itemtype="http://schema.org/NewsArticle">
+  <header>
+    <span class="text-muted">
+      <i class="fas fa-calendar"></i>
+      <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%-m.%Y %k:%M" }}</time>
+    </span>
+    <h1 class="py-3" itemprop="name">{{ page.title }}</h1>
+  </header>
 
-  {{ content }}
+  <main itemprop="articleBody">
+    {{ content }}
+  </main>
 
-  <p class="text-right text-muted">
-    <i class="fas fa-calendar"></i>
-    {{ page.date | date: "%d.%m. %Y" }}
-  </p>
+  <footer>
+    <nav class="my-3">
+      <ul class="pagination justify-content-center">
+        {% if page.previous.url %}
+        <li class="page-item">
+          <a class="page-link" href="{{ page.previous.url }}"> Předchozí </a>
+        </li>
+        {% endif %}
+        {% if page.next.url %}
+        <li class="page-item">
+          <a class="page-link" href="{{ page.next.url }}"> Následující </a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </footer>
 </article>
 
-<nav class="my-3">
-  <ul class="pagination justify-content-center">
-    {% if page.previous.url %}
-    <li class="page-item">
-      <a class="page-link" href="{{ page.previous.url }}"> Předchozí </a>
-    </li>
-    {% endif %}
-    {% if page.next.url %}
-    <li class="page-item">
-      <a class="page-link" href="{{ page.next.url }}"> Následující </a>
-    </li>
-    {% endif %}
-  </ul>
-</nav>
