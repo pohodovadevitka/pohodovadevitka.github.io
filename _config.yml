@@ -15,9 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Pohodová Devítka
 email: pohodovadevitka@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  PoHodová devítka - velkobítešský běžecký závod pro všechny věkové a výkonnostní
-  kategorie, který se koná v září, týden po bítešských hodech.
+description: Běžecký závod ve Velké Bíteši, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.pohodovadevitka.cz" # the base hostname & protocol for your site, e.g. http://example.com
 logo_large: http://www.pohodovadevitka.cz/images/logo.png
