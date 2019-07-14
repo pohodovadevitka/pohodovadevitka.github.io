@@ -117,7 +117,7 @@ permalink: "/propozice/"
   }
 </script>
 
-<div class="btn-toolbar justify-content-end">
+<div class="btn-toolbar justify-content-end d-print-none">
   <a
     class="btn btn-md btn-success"
     href="/files/Propozice-2018.pdf"
@@ -130,122 +130,123 @@ permalink: "/propozice/"
   </a>
 </div>
 
-<hr>
+<div class="card my-3">
+  <picture>
+    <source src="/images/logo.svg" type="image/svg+xml">
+    <source src="/images/logo.webp" type="image/webp">
+    <source src="/images/logo.jpg" type="image/jpeg">
+    <source src="/images/logo.png" type="image/jpeg">
+    <img src="/images/logo.jpg" class="card-img-top" alt="logo">
+  </picture>
 
-<h1 class="py-3">Propozice</h1>
+  <div class="card-body">
+    <p class="lead text-center">
+      Bítešský spolek vytrvalostních sportů dne <b><time datetime="2018-09-16">16. září 2018</time></b> pořádá <b>5.&nbsp;ročník</b> běžeckého závod
+    </p>
+    <h1 class="text-center font-weight-bold my-3">
+      <span class="basic-green">Po</span><span class="basic-orange">Hodová</span> <span class="basic-blue">Devítka</span>
+    </h1>
 
-<p class="lead text-center">
-  Bítešský spolek vytrvalostních sportů pořádá
-  <strong>5. ročník</strong> běžeckého závodu
-</p>
+    <h2 class="my-3">KDE?</h2>
+    <p>
+      Fotbalový stadion ve Velké Bíteši (GPS souřadnice
+      <a href="http://www.mapy.cz/s/cwXV">49,295 a 16,223</a>)
+    </p>
 
-<div class="my-3" style="position: relative;">
-  <img class="img-thumbnail" src="/images/logo.jpg" alt="logo" width="1101">
-  <div
-    style="position: absolute; bottom: 6px; right: 24px; font-family: serif; font-size: 45px; font-weight: bold;"
-  >
-    16.9. 2018
-  </div>
-</div>
+    <h2 class="my-3">REGISTRACE</h2>
+    <p>
+      a) online do 9. 9. za 70,- Kč<br />
+      b) na místě 100,- Kč (děti ve vypsaných dětských kategoriích zdarma). Začátek
+      registrací od 9 hodin.
+    </p>
 
-<h2 class="my-3">KDE?</h2>
-<p>
-  Fotbalový stadion ve Velké Bíteši (GPS souřadnice
-  <a href="http://www.mapy.cz/s/cwXV">49,295 a 16,223</a>)
-</p>
+    <h2 class="my-3">PROGRAM</h2>
+    <div class="table-responsive">
+      <table>
+        <tbody>
+          <tr>
+            <td>Start dětských kategorií</td>
+            <td>11:00 hod <small>(nejprve budou startovat děti 0-6 let)</small></td>
+          </tr>
+          <tr>
+            <td>Hlavní závod</td>
+            <td>14:00 hod</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<h2 class="my-3">REGISTRACE</h2>
-<p>
-  a) online do 9. 9. za 70,- Kč<br />
-  b) na místě 100,- Kč (děti ve vypsaných dětských kategoriích zdarma). Začátek
-  registrací od 9 hodin.
-</p>
+    {% include categories-2018.html title="VYPSANÉ KATEGORIE" %}
 
-<h2 class="my-3">PROGRAM</h2>
-<div class="table-responsive">
-  <table>
-    <tbody>
-      <tr>
-        <td>Start dětských kategorií</td>
-        <td>11:00 hod <small>(nejprve budou startovat děti 0-6 let)</small></td>
-      </tr>
-      <tr>
-        <td>Hlavní závod</td>
-        <td>14:00 hod</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <ul>
+      <li>
+        Díky ohlasům z loňského ročníku zachováme terénní variantu hlavního závodu
+      </li>
+      <li>V každé kategorii budou vyhlášení první tři závodníci</li>
+      <li>Každý závodník obdrží startovní balíček a občerstvení po doběhu</li>
+      <li>
+        V hlavním závodu se mohou první tři z každé kategorie těšit na věcné ceny
+      </li>
+      <li>
+        Speciální kategorií bude opět „nejrychlejší Bítešák“ a „nejrychlejší
+        Bítešačka“, kteří budou za své snažení také odměněni
+      </li>
+      <li>
+        Pokud bude v kategorii nízký počet běžců, může dojít ke sloučení startu
+        s jinou kategorií
+      </li>
+      <li>Děti do 6 let mohou absolvovat trať za doprovodu svých rodičů</li>
+      <li>
+        Dětské kategorie poběží závod po cyklostezce od fotbalového stadionu směrem
+        k ITW Pronovia
+      </li>
+      <li>
+        Všichni závodníci v dětských kategoriích obdrží po doběhu cenu a medaili
+      </li>
+    </ul>
 
-{% include categories-2018.html title="VYPSANÉ KATEGORIE" %}
+    <h2 class="my-3">TRASA HLAVNÍHO ZÁVODU</h2>
+    <a href="/files/mapa-2018.jpg">
+      <img
+        class="img-thumbnail my-3"
+        src="/files/mapa-2018.jpg"
+        alt="mapa závodu"
+        width="1101"
+      >
+    </a>
+    <p>
+      Menší změna oproti loňsku, přibude více krosových pasáží a trocha kopečků ☺
+      Závodníci se nebudou vracet stejnou cestou zpátky (až na posledních cca 500
+      m). Přibližně 1/3 asfalt, 2/3 nezpevněné cesty.
+    </p>
 
-<ul>
-  <li>
-    Díky ohlasům z loňského ročníku zachováme terénní variantu hlavního závodu
-  </li>
-  <li>V každé kategorii budou vyhlášení první tři závodníci</li>
-  <li>Každý závodník obdrží startovní balíček a občerstvení po doběhu</li>
-  <li>
-    V hlavním závodu se mohou první tři z každé kategorie těšit na věcné ceny
-  </li>
-  <li>
-    Speciální kategorií bude opět „nejrychlejší Bítešák“ a „nejrychlejší
-    Bítešačka“, kteří budou za své snažení také odměněni
-  </li>
-  <li>
-    Pokud bude v kategorii nízký počet běžců, může dojít ke sloučení startu
-    s jinou kategorií
-  </li>
-  <li>Děti do 6 let mohou absolvovat trať za doprovodu svých rodičů</li>
-  <li>
-    Dětské kategorie poběží závod po cyklostezce od fotbalového stadionu směrem
-    k ITW Pronovia
-  </li>
-  <li>
-    Všichni závodníci v dětských kategoriích obdrží po doběhu cenu a medaili
-  </li>
-</ul>
+    <h2 class="my-3">DOPRAVA</h2>
+    <p>Parkování u fotbalového stadionu</p>
+    <p>
+      Závod se běží za plného silničního provozu. Každý závodník běží na vlastní
+      nebezpečí. Dle Nařízení Evropského parlamentu a Rady (EU) č. 2016/679 ze dne
+      27. dubna 2016 účastníci závodu zaplacením startovného souhlasí se zpracováním
+      osobních údajů. Tato data nebudou organizátorem nijak zneužita.
+    </p>
 
-<h2 class="my-3">TRASA HLAVNÍHO ZÁVODU</h2>
-<a href="/files/mapa-2018.jpg">
-  <img
-    class="img-thumbnail my-3"
-    src="/files/mapa-2018.jpg"
-    alt="mapa závodu"
-    width="1101"
-  >
-</a>
-<p>
-  Menší změna oproti loňsku, přibude více krosových pasáží a trocha kopečků ☺
-  Závodníci se nebudou vracet stejnou cestou zpátky (až na posledních cca 500
-  m). Přibližně 1/3 asfalt, 2/3 nezpevněné cesty.
-</p>
-
-<h2 class="my-3">DOPRAVA</h2>
-<p>Parkování u fotbalového stadionu</p>
-<p>
-  Závod se běží za plného silničního provozu. Každý závodník běží na vlastní
-  nebezpečí. Dle Nařízení Evropského parlamentu a Rady (EU) č. 2016/679 ze dne
-  27. dubna 2016 účastníci závodu zaplacením startovného souhlasí se zpracováním
-  osobních údajů. Tato data nebudou organizátorem nijak zneužita.
-</p>
-
-<h2 class="my-3">KONTAKTY</h2>
-<p class="text-center">
-  <b>Zdeněk Kundera</b> <a href="tel:777612344">777 612 344</a><br />
-  <b>Ondřej Plechatý</b> <a href="tel:731425676">731 425 676</a><br />
-  <b>Martin Macholán</b>
-</p>
-<div class="row">
-  <div class="col text-center">
-    <a href="http://www.pohodovadevitka.cz">www.pohodovadevitka.cz</a>
-  </div>
-  <div class="col text-center">
-    <a href="http://www.facebook.com/pohodovadevitka"
-      >www.facebook.com/pohodovadevitka</a
-    >
-  </div>
-  <div class="col text-center">
-    <a href="mailto:bitesskybeh@seznam.cz">bitesskybeh@seznam.cz</a>
+    <h2 class="my-3">KONTAKTY</h2>
+    <p class="text-center">
+      <b>Zdeněk Kundera</b> <a href="tel:777612344">777 612 344</a><br />
+      <b>Ondřej Plechatý</b> <a href="tel:731425676">731 425 676</a><br />
+      <b>Martin Macholán</b>
+    </p>
+    <div class="row">
+      <div class="col text-center">
+        <a href="http://www.pohodovadevitka.cz">www.pohodovadevitka.cz</a>
+      </div>
+      <div class="col text-center">
+        <a href="http://www.facebook.com/pohodovadevitka"
+          >www.facebook.com/pohodovadevitka</a
+        >
+      </div>
+      <div class="col text-center">
+        <a href="mailto:bitesskybeh@seznam.cz">bitesskybeh@seznam.cz</a>
+      </div>
+    </div>
   </div>
 </div>
