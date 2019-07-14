@@ -9,8 +9,6 @@
     text-decoration: none;
     vertical-align: middle;
     height: 50px;
-    background-position: center center;
-    background-repeat: no-repeat;
     overflow: hidden;
 
     -webkit-filter: grayscale(100%);
@@ -26,6 +24,9 @@
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     filter: grayscale(0%);
+  }
+  img {
+    display: block;
   }
   /* Begin of "Genereated with bin/sponsors.js" */
   a[href="http://www.mannen.cz"] {
