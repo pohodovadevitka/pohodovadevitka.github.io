@@ -163,10 +163,23 @@
       integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="/js/main.js"
-      integrity="sha256-Gi3an5LPBHJv4mlL+3AgSFnRx4EZgkQVM72qHuUvm7k="
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      $(document).ready(() => {
+        // load sponsors background images
+        const elements = document.querySelectorAll('#menu-sponsors a[data-background-image]')
+        const path = "../images/sponsors/"
+
+        for (let i = 0; i < elements.length; i++) {
+          const src = elements[i].getAttribute("data-background-image");
+          const title = elements[i].getAttribute("title");
+          if (src) {
+            elements[i].innerHTML = `<picture>
+              <source srcset="${path}${src.replace(/\.\w+$/, '.webp')}" type="image/webp">
+              <img src="${path}${src}" alt="${title}">
+            <picture>`
+          }
+        }
+      })
+    </script>
   </body>
 </html>
