@@ -7,12 +7,12 @@ permalink: "/kdo-jsme/"
 <script type="application/ld+json">
   { "@context": "http://schema.org"
   , "@type": "Organization"
-  , "email": ["bitesskybeh@seznam.cz", "pohodovadevitka@gmail.com"]
+  , "email": ["{{ site.email }}"]
   , "description": "{{ site.description }}"
   , "name": "{{ site.title }}"
-  , "sameAs": [ "facebook.com/pohodovadevitka"
-              , "twitter.com/pohodovadevitka"
-              , "pohodovadevitka.rajce.idnes.cz"
+  , "sameAs": [ "{{ site.facebook_url }}"
+              , "{{ site.twitter_url }}"
+              , "{{ site.gallery_url }}"
               ]
   , "url": "{{ site.url }}"
   }

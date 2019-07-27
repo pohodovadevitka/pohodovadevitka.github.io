@@ -215,13 +215,13 @@ permalink: "/propozice/"
     </p>
     <div class="row">
       <div class="col text-center">
-        <a href="http://www.pohodovadevitka.cz">www.pohodovadevitka.cz</a>
+        <a href="{{ site.url }}">{{ site.url | remove_first: "https://" }}</a>
       </div>
       <div class="col text-center">
-        <a href="http://www.facebook.com/pohodovadevitka">www.facebook.com/pohodovadevitka</a>
+        <a href="{{ site.facebook_url }}">{{ site.facebook_url | remove_first: "https://" }}</a>
       </div>
       <div class="col text-center">
-        <a href="mailto:bitesskybeh@seznam.cz">bitesskybeh@seznam.cz</a>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       </div>
     </div>
   </div>
