@@ -1,37 +1,32 @@
-require(['jquery', 'moment'], function ($, moment) {
-    const $countdown = $('#countdown');
-    const $countdownTime = $countdown.find('.countdown-time');
-    const start = moment($countdown.attr('data-start'), 'X');
-    const isInFuture = !!$countdown.attr('data-is_in_future');
+$(document).ready(function () {
+  const $countdown = $('#countdown')
+  const start = Date.parse($countdown.attr('data-start'))
+  if (start - Date.now() < 0) {
+    $countdown.text('Start již proběhl')
+  } else {
+    let timer = setInterval(function () {
+      const t = new Date(start - Date.now())
+      if (t > 0) {
+        const d = Math.floor(t.getTime() / 24 / 60 / 60 / 1000)
+        const time = [
+          d, ' dní ',
+          t.getHours(), 'h ',
+          t.getMinutes(), 'm ',
+          t.getSeconds(), 's'
+        ]
 
-    setInterval(function () {
-            const now = moment();
-            const days = Math.floor(start.diff(now, 'days', true));
-            const hours = Math.abs(now.diff(start, 'hours') % 24);
-            const minutes = Math.abs(now.diff(start, 'minutes') % 60);
-            const seconds = Math.abs(now.diff(start, 'seconds') % 60);
-            const time = [hours, 'h ', minutes, 'm ', seconds, 's'];
-            const showDays = function () {
-                switch (days) {
-                    case 1:
-                        time.unshift(' den ');
-                        break;
-                    case 2:
-                    case 3:
-                    case 4:
-                        time.unshift(' dny ');
-                        break;
-                    default:
-                        time.unshift(isInFuture ? ' dní ' : ' dny ');
-                        break;
-                }
-                time.unshift(days);
-            };
-
-        if (days > 0) {
-            showDays();
+        if (d === 1) {
+          time[1] = ' den '
+        } else if (d < 5) {
+          time[1] = ' dny '
         }
 
-        $countdownTime.text(time.join(''));
-    }, 1000);
-});
+        $countdown.text('Startujeme již za ' + time.join(''))
+      } else {
+        $countdown.text('Start již proběhl')
+        clearInterval(timer)
+        timer = null
+      }
+    }, 1000)
+  }
+})

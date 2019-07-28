@@ -38,19 +38,12 @@ pictures:
 </p>
 
 <!--
-  <div class="panel panel-default">
-      <div class="panel-body text-center">
-          <p class="lead" id="countdown" data-start="{$timestamp}" data-is_in_future="{$isInFuture}">
-                  <span n:class="in-future, !$isInFuture ? hidden">Startujeme již za <span
-                              class="countdown-time">{$countdown}</span></span>
-              <span n:class="in-past, $isInFuture ? hidden">Start proběhl {$startDate|date:'j.n.Y'}
-                      v {$startDate|date:'G:i'}</span>
-          </p>
-          {if $isInFuture}
-          <a class="btn btn-lg btn-hot" href="{$PROP['registration.url']}" role="button">Registrovat</a>
-          {/if}
-      </div>
+<div class="card mb-3">
+  <div class="card-body text-center">
+    <p class="card-text" id="countdown" data-start="2019-09-15T11:00:00"></p>
+    <a class="btn btn-lg btn-hot" href="3" role="button">Registrovat</a>
   </div>
+</div>
 -->
 
 <div id="carousel" class="carousel slide mb-3" data-ride="carousel">
@@ -115,3 +108,7 @@ pictures:
   {% include post-card.html index=2 %} {% endif %}
 </div>
 {% endif %}
+
+<!--
+<script async src="/js/homepage.js"></script>
+-->
