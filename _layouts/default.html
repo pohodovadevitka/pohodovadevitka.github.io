@@ -168,7 +168,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(document).ready(function () {
+      $(function () {
         // load sponsors background images
         const elements = document.querySelectorAll('#menu-sponsors a[data-background-image]')
         const path = "/images/sponsors/"
@@ -190,6 +190,8 @@
             elements[i].innerHTML = renderPicture(src, title)
           }
         }
+        
+        $('abbr').tooltip()
       })
     </script>
   </body>
