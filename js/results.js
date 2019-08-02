@@ -1,8 +1,8 @@
 "use strict"
 
 function renderOption (value, name) {
-  const e = document.createElement("option")
-  const t = document.createTextNode(name)
+  var e = document.createElement("option")
+  var t = document.createTextNode(name)
   e.appendChild(t)
   e.value = value
   return e
@@ -59,9 +59,9 @@ Result.prototype.hide = function () {
   this._element.style.display = 'none'
 }
 Result.prototype._render = function () {
-  const e = document.createElement("tr")
+  var e = document.createElement("tr")
   e.style.display = 'none'
-  const time = this.time === "DNF"
+  var time = this.time === "DNF"
     ? `<abbr title="nedokončil(a) závod">DNF</abbr>`
     : `<b>${this.time}</b>`
   e.innerHTML = `
@@ -77,55 +77,71 @@ Result.prototype._render = function () {
   return e
 }
 
-$(document).ready(() => {
-  const $category = document.getElementById("category")
-  const $gender = document.getElementById("gender")
-  const $race = document.getElementById("race")
-  const $femaleCategories = document.getElementById("female-categories")
-  const $maleCategories = document.getElementById("male-categories")
-  const $results = document.getElementById("results")
-  const rawData = JSON.parse(document.getElementById("data").innerHTML)
+function addEvent(event, element, callback) {
+  if (element.addEventListener) {
+    element.addEventListener(event, callback, false)
+  } else if (element.attachEvent) {
+    element.attachEvent("on" + event, callback)
+  } else {
+    element["on" + event] = callback
+  }
+}
 
-  rawData.races.forEach(x => new Race(x, $race))
-  rawData.genders.forEach(x => new Gender(x, $gender))
+addEvent("load", window, function () {
+  var $category = document.getElementById("category")
+  var $gender = document.getElementById("gender")
+  var $race = document.getElementById("race")
+  var $femaleCategories = document.getElementById("female-categories")
+  var $maleCategories = document.getElementById("male-categories")
+  var $results = document.getElementById("results")
+  var rawData = JSON.parse(document.getElementById("data").innerHTML)
 
-  const categories = rawData.categories.map(x =>
-    x[1] === "M"
+  rawData.races.forEach(function (x) { new Race(x, $race) })
+  rawData.genders.forEach(function (x) { new Gender(x, $gender) })
+
+  var categories = rawData.categories.map(function (x) {
+    return x[1] === "M"
       ? new Category(x, $maleCategories)
       : new Category(x, $femaleCategories)
-  ).reduce((a, x) => { a[x.id] = x; return a }, {})
-  const results = rawData.results.map(x => {
-    const y = new Result(x, $results)
+  })
+  .reduce(function (a, x) {
+    a[x.id] = x
+    return a
+  }, {})
+
+  var results = rawData.results.map(function (x) {
+    var y = new Result(x, $results)
     y.gender = categories[y.category].gender
     y.race = categories[y.category].race
     return y
   })
 
-  const applyFilter = () => {
-    const race = $race.value
-    const gender = $gender.value
-    const category = $category.value
+  function applyFilter () {
+    var race = $race.value
+    var gender = $gender.value
+    var category = $category.value
 
-    Object.values(categories)
-      .forEach(category =>
+    Object.keys(categories)
+      .map(function (id) { return categories[id] })
+      .forEach(function (category) {
         (race === "" || category.race === race) &&
         (gender === "" || category.gender === gender)
           ? category.show()
           : category.hide()
-      )
+      })
 
-    results.forEach(result =>
+    results.forEach(function (result) {
       (race === "" || result.race === race) &&
       (gender === "" || result.gender === gender) &&
       (category === "" || result.category === category)
         ? result.show()
         : result.hide()
-    )
+    })
   }
 
-  $($race).on("change", () => {
-    const race = $race.value
-    const category = categories[$category.value]
+  addEvent("change", $race, function () {
+    var race = $race.value
+    var category = categories[$category.value]
 
     if (category && category.race !== race) {
       $category.value = ""
@@ -133,9 +149,10 @@ $(document).ready(() => {
 
     applyFilter()
   })
-  $($gender).on("change", () => {
-    const gender = $gender.value
-    const category = categories[$category.value]
+
+  addEvent("change", $gender, function () {
+    var gender = $gender.value
+    var category = categories[$category.value]
 
     if (category && category.gender !== gender) {
       $category.value = ""
@@ -143,7 +160,8 @@ $(document).ready(() => {
 
     applyFilter()
   })
-  $($category).on("change", () => {
+
+  addEvent("change", $category, function () {
     applyFilter()
   })
 
