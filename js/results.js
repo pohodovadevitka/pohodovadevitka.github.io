@@ -32,10 +32,10 @@ function Category (x, parent) {
   parent.appendChild(this._element)
 }
 Category.prototype.show = function () {
-  this._element.style.display = ''
+  this._element.style.display = ""
 }
 Category.prototype.hide = function () {
-  this._element.style.display = 'none'
+  this._element.style.display = "none"
 }
 
 function Result (x, parent) {
@@ -53,27 +53,27 @@ function Result (x, parent) {
   parent.appendChild(this._element)
 }
 Result.prototype.show = function () {
-  this._element.style.display = ''
+  this._element.style.display = ""
 }
 Result.prototype.hide = function () {
-  this._element.style.display = 'none'
+  this._element.style.display = "none"
 }
 Result.prototype._render = function () {
   var e = document.createElement("tr")
-  e.style.display = 'none'
+  e.style.display = "none"
   var time = this.time === "DNF"
-    ? `<abbr title="nedokončil(a) závod">DNF</abbr>`
-    : `<b>${this.time}</b>`
-  e.innerHTML = `
-    <td>${this.positionAbs || ""}</td>
-    <td>${this.category}</td>
-    <td>${this.positionCat || ""}</td>
-    <td>${this.number}</td>
-    <td class="name">
-      <b>${this.name}</b> (${this.year}) ${this.club}
-    </td>
-    <td class="number">${time}</td>
-  `
+    ? "<abbr title=\"nedokončil(a) závod\">DNF</abbr>"
+    : "<b>" + this.time + "</b>"
+  e.innerHTML = [
+      "<td>", (this.positionAbs || ""), "</td>",
+      "<td>", this.category, "</td>",
+      "<td>", (this.positionCat || ""), "</td>",
+      "<td>", this.number, "</td>",
+      "<td class=\"name\">",
+        "<b>", this.name, "</b> (", this.year, ") ", this.club,
+      "</td>",
+      "<td class=\"number\">", time, "</td>"
+  ].join("")
   return e
 }
 
