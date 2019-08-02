@@ -10,20 +10,6 @@
     vertical-align: middle;
     height: 50px;
     overflow: hidden;
-
-    -webkit-filter: grayscale(100%);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    filter: grayscale(100%);
-  }
-  :hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    filter: grayscale(0%);
   }
   img {
     display: block;
