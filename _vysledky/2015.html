@@ -10,4 +10,72 @@ keywords: "výsledky 2015"
 
 <h1 class="py-3">{{ page.title }}</h1>
 
-{% include results.html year="2015" discipline="9km" title="Závod 9&nbsp;km" %}
+<script id="data" type="application/json">
+  {
+    "genders": [
+      ["F", "Ženy"],
+      ["M", "Muži"]
+    ],
+    "races": [
+      ["9km", "9 km"]
+    ],
+    "categories": [
+      ["M",   "M", "9km", "Muži „A“", 1966, null],
+      ["M50", "M", "9km", "Muži „B“", null, 1965],
+      ["Ž",   "F", "9km", "Ženy „A“", 1966, null],
+      ["Ž50", "F", "9km", "Ženy „B“", null, 1965]
+    ],
+    "results": [
+      [1,"M",1,"46","Ondřej Rosa",1988,"TJ Sokol Velké Meziříčí-VSK UNI Brno","33:18.00"],
+      [2,"M",2,"39","Jakub Procházka",1994,"Sportovní centrum Velké Meziříčí","33:52.00"],
+      [3,"M",3,"61","Milan Procházka",1966,"TJ Spartak Třebíč","34:33.00"],
+      [4,"M",4,"60","Petr Jeřábek",1993,"AC Moravská Slavia Brno","35:10.00"],
+      [5,"M",5,"62","Miroslav Mucha",1974,"NHÚ Balinka VM","36:46.00"],
+      [6,"M",6,"64","Karel Hrbáček",1968,"Brno","36:55.00"],
+      [7,"M",7,"52","Michal Blaha",1985,"BT Velká Bíteš","38:01.00"],
+      [8,"M",8,"74","Vít Paták",1976,"Ruda","38:54.00"],
+      [9,"Ž",1,"55","Barbora Novotná",1981,"","39:03.00"],
+      [10,"M",9,"71","Alexander Mrůzek",1965,"Univerzita Brno plavání","39:18.00"],
+      [11,"M",10,"68","Michal Koudelík",1973,"Velké Meziříčí","39:22.00"],
+      [12,"M",11,"82","Martin Trojan",1981,"Oslavice","39:35.00"],
+      [13,"M50",1,"43","Miroslav Fabrik",1959,"Brno Bystrc","39:41.00"],
+      [14,"M",12,"48","Jan Mička",1988,"Vlkov","40:55.00"],
+      [15,"M",13,"41","Michal Marek",1987,"Velká Bíteš","41:07.00"],
+      [16,"M",14,"45","David Vránek",1978,"Brno","41:11.00"],
+      [17,"M",15,"77","Rostislav Zejda",1985,"Rudíkov","41:32.00"],
+      [18,"M",16,"42","Ondřej Grulich",2001,"triatlon Třebíč","42:13.00"],
+      [19,"M",17,"79","Přemysl Kachlík",1989,"Brno","42:36.00"],
+      [20,"M",18,"63","Jaromír Mucha",1974,"NHÚ Balinka VM","43:10.00"],
+      [21,"Ž",2,"80","Kateřina Sochorová",1990,"Krokočín","43:13.00"],
+      [22,"Ž50",1,"40","Jana Smrčková",1964,"Lesní Hluboké","43:28.00"],
+      [23,"Ž",3,"50","Michaela Tuháčková",1974,"Brno","43:37.00"],
+      [24,"M",19,"81","Roman Karmazín",1979,"Velké Meziříčí","43:51.00"],
+      [25,"M",20,"67","Milan Strádal",1974,"NHÚ Balinka VM","44:00.00"],
+      [26,"M",21,"53","Filip Tomšík",1986,"Velká Bíteš","44:13.00"],
+      [27,"M",22,"65","Bernard Chemlíček",1978,"Velká Bíteš","44:42.00"],
+      [28,"M",23,"51","Matěj Polách",1989,"","45:51.00"],
+      [29,"Ž",4,"36","Julie Ráčková",1998,"Sokol Velké Meziříčí","46:20.00"],
+      [30,"Ž",6,"58","Markéta Pohlová",1990,"Velká Bíteš","46:27.00"],
+      [31,"Ž",5,"57","Alžběta Blahová",1992,"Velká Bíteš","46:27.00"],
+      [32,"Ž",7,"70","Markéta Mrůzková",1997,"Kometa Brno plavání","47:38.00"],
+      [33,"M50",2,"56","Martin Blaha",1965,"Velká Bíteš","48:45.00"],
+      [34,"M50",3,"73","Zdeněk Bouček",1956,"Velké Meziříčí","48:55.00"],
+      [35,"Ž",8,"66","Jana Rambousková",1994,"Vlkov","49:00.00"],
+      [36,"Ž",9,"59","Jana Kalová",1966,"jkplusjk Brno","49:07.00"],
+      [37,"Ž",10,"72","Pavlína Mrůzková",1970,"Univerzita Brno plavání","49:18.00"],
+      [38,"M",24,"47","Tomáš Kazda",2002,"triatlon Třebíč","49:20.00"],
+      [39,"Ž50",2,"44","Blanka Fabriková",1960,"Brno (VB)","49:52.00"],
+      [40,"Ž",11,"69","Eliška Brázdilová",1997,"Velká Bíteš","51:37.00"],
+      [42,"M",25,"37","Marie Homolová",1975,"Atletik Třebíč","52:03.00"],
+      [41,"M50",4,"38","Arnošt Koreš",1950,"Atletik Třebíč","52:03.00"],
+      [43,"Ž",12,"76","Michaela Zejdová",1986,"Rudíkov","52:26.00"],
+      [44,"Ž",13,"49","Zuzana Bendová",1982,"Velká Bíteš","52:37.00"],
+      [45,"M",26,"54","Miloš Minařík",1985,"Velká Bíteš","53:52.00"],
+      [46,"Ž",14,"78","Lenka Kučerová",1985,"","54:02.00"],
+      [47,"M",27,"75","Miroslav Kvasnica",1989,"TJ Sokol Křoví","1:06:18.00"]
+    ]
+  }
+</script>
+
+{% include results-filter.html %}
+{% include categories-2015.html title="Vypsané kategorie" %}

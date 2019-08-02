@@ -32,18 +32,6 @@ h2 {
   background-color: white;
 }
 
-table.results tbody {
-  tr:first-child {
-    background-color: gold;
-  }
-  tr:nth-child(2) {
-    background-color: silver;
-  }
-  tr:nth-child(3) {
-    background-color: goldenrod;
-  }
-}
-
 table .number {
   text-align: right;
   width: 1%;
