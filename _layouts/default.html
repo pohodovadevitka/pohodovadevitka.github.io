@@ -168,7 +168,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(document).ready(() => {
+     $(document).ready(function () {
         // load sponsors background images
         const elements = document.querySelectorAll('#menu-sponsors a[data-background-image]')
         const path = "../images/sponsors/"
@@ -177,10 +177,12 @@
           const src = elements[i].getAttribute("data-background-image");
           const title = elements[i].getAttribute("title");
           if (src) {
-            elements[i].innerHTML = `<picture>
-              <source srcset="${path}${src.replace(/\.\w+$/, '.webp')}" type="image/webp">
-              <img src="${path}${src}" alt="${title}">
-            <picture>`
+            elements[i].innerHTML = [
+              "<picture>",
+                "<source srcset=\"", path, src.replace(/\.\w+$/, ".webp"), " type=\"image/webp\">",
+                "<img src=\"", path, src, " alt=\"", title, "\">",
+              "</picture>"
+            ].join("")
           }
         }
       })
