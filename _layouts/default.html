@@ -171,18 +171,16 @@
       $(document).ready(function () {
         // load sponsors background images
         const elements = document.querySelectorAll('#menu-sponsors a[data-background-image]')
-        const path = "../images/sponsors/"
+        const path = "/images/sponsors/"
         const renderPicture = typeof window.HTMLPictureElement === "function"
           ? function (src, title) {
-              return [
-                "<picture>",
-                  "<source srcset=\"", path, src.replace(/\.\w+$/, ".webp"), "\" type=\"image/webp\">",
-                  "<img src=\"", path, src, "\" alt=\"", title, "\">",
-                "</picture>"
-              ].join("")
+              return "<picture>" +
+                "<source srcset=\"" + path + src.replace(/\.\w+$/, ".webp") + "\" type=\"image/webp\">" +
+                "<img src=\"" + path + src + "\" alt=\"" + title + "\"/>" +
+              "</picture>"
             }
           : function (src, title) {
-              return ["<img src=\"", path, src, "\" alt=\"", title, "\">"].join("")
+              return "<img src=\"" + path + src + "\" alt=\"" + title + "\"/>"
             }
 
         for (let i = 0; i < elements.length; i++) {
