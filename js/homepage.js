@@ -1,8 +1,18 @@
-$(document).ready(function () {
-  const $countdown = $('#countdown')
-  const start = Date.parse($countdown.attr('data-start'))
+function addEvent(event, element, callback) {
+  if (element.addEventListener) {
+    element.addEventListener(event, callback, false)
+  } else if (element.attachEvent) {
+    element.attachEvent("on" + event, callback)
+  } else {
+    element["on" + event] = callback
+  }
+}
+
+addEvent("load", window, function () {
+  const $countdown = document.getElementById('countdown')
+  const start = Date.parse($countdown.getAttribute('data-start'))
   if (start - Date.now() < 0) {
-    $countdown.text('Start již proběhl')
+    $countdown.innerHTML = 'Start již proběhl'
   } else {
     let timer = setInterval(function () {
       const t = new Date(start - Date.now())
@@ -21,9 +31,9 @@ $(document).ready(function () {
           time[1] = ' dny '
         }
 
-        $countdown.text('Startujeme již za ' + time.join(''))
+        $countdown.innerHTML = 'Startujeme již za ' + time.join('')
       } else {
-        $countdown.text('Start již proběhl')
+        $countdown.innerHTML = 'Start již proběhl'
         clearInterval(timer)
         timer = null
       }
