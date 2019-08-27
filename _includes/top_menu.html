@@ -72,11 +72,15 @@
       aria-labelledby="navbarDropdownMenuLink"
     >
       <li
+        class="dropdown-item{% if page.url == '/trasa-zavodu/' %} active{% endif %}"
+      >
+        <a class="nav-link" href="/trasa-zavodu/">Trasa závodu</a>
+      </li>
+      <li
         class="dropdown-item{% if page.url == '/kdo-jsme/' %} active{% endif %}"
       >
         <a class="nav-link" href="/kdo-jsme/">Kdo jsme?</a>
       </li>
-
       <li
         class="dropdown-item{% if page.url == '/jak-to-cele-vzniklo/' %} active{% endif %}"
       >
