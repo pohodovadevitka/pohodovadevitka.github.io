@@ -1,0 +1,67 @@
+---
+layout: default
+title: "Výsledky ročníku 2019"
+permalink: "/vysledky/2019/"
+year: "2019"
+keywords: "výsledky 2019"
+published: public
+---
+
+{% include print-and-proposition.html %}
+
+<h1 class="py-3">{{ page.title }}</h1>
+
+<script id="data" type="application/json">
+  {
+    "genders": [
+      ["F", "Ženy"],
+      ["M", "Muži"]
+    ],
+    "races": [
+      ["9km",   "9 km"],
+      ["1100m", "1100 m"],
+      ["500m",  "500 m"],
+      ["400m",  "400 m"],
+      ["300m",  "300 m"]
+    ],
+    "categories": [
+      ["MA",  "M", "9km",   "Muži „A“",      1980, 2001],
+      ["MB",  "M", "9km",   "Muži „B“",      1970, 1979],
+      ["MC",  "M", "9km",   "Muži „C“",      1960, 1969],
+      ["MD",  "M", "9km",   "Muži „D“",      null, 1959],
+      ["FA",  "F", "9km",   "Ženy „A“",      1985, 2001],
+      ["FB",  "F", "9km",   "Ženy „B“",      1975, 1984],
+      ["FC",  "F", "9km",   "Ženy „C“",      null, 1974],
+      ["DM",  "M", "1100m", "Dorostenci",    2002, 2006],
+      ["DF",  "F", "1100m", "Dorostenky",    2002, 2006],
+      ["JM1", "M", "500m",  "Starší žáci",   2007, 2009],
+      ["JF1", "F", "500m",  "Starší žákyně", 2007, 2009],
+      ["JM2", "M", "400m",  "Mladší žáci",   2010, 2012],
+      ["JF2", "F", "400m",  "Mladší žákyně", 2010, 2012],
+      ["CM",  "M", "300m",  "Děti",          2013, null],
+      ["CF",  "F", "300m",  "Děti",          2013, null]
+    ],
+    "results": [
+    ]
+  }
+</script>
+
+<div class="alert alert-primary" role="alert">
+  Zde očekávejte výsledky závodu.
+</div>
+
+{% include results-filter.html %}
+{% include categories-2019.html title="Vypsané kategorie" %}
+
+<!--
+
+[1,"MA",1,"36","Jakub Exner",1983,"Jihlava","35:16.00"],
+[null,"FA",null,"10","Lucie Holubářová",1995,"Velká Bíteš","DNF"],
+
+
+^([^\.,]+)\.?,(\d+),([^,]+),([^,]+),([^,]*),([^,]+),([^,]+)$
+,\t,\t$1,\t"$2",\t"$3",\t$4,\t"$5",\t"$6"
+
+Nezapomen na DNF !
+
+-->
