@@ -5,7 +5,7 @@
   <div class="card-footer">
     <a href="{{ site.posts[include.index].url }}" class="card-link"> Více &raquo; </a>
     <small class="text-muted float-right">
-      {% include icon-calendar.svg %} {{ site.posts[include.index].date | date: "%d.%m. %Y" }}
+      {{ site.posts[include.index].date | date: "%d.%m. %Y" }}
     </small>
   </div>
 </div>
