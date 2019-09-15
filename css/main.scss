@@ -27,18 +27,18 @@ h2 {
 }
 
 svg {
-  height: 16px;
-  width: 16px;
   display: inline-block;
   line-height: 1;
 }
 
+.btn-success svg,
+.btn-secondary svg,
+.btn-primary svg {
+  fill: white;
+}
+
 footer a.nav-link svg {
   fill: #6c757d;
-  height: 16px;
-  width: 16px;
-  display: inline-block;
-  line-height: 1;
 }
 
 .carousel img {
