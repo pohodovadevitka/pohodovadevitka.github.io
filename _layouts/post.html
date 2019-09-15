@@ -35,7 +35,7 @@ layout: default
 <article class="post">
   <header>
     <div class="text-muted text-right">
-      <i class="fas fa-calendar"></i>
+      {% include icon-calendar.svg %}      
       Publikováno
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%-m.%Y %k:%M" }}</time>
     </div>

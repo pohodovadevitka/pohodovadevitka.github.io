@@ -26,6 +26,21 @@ h2 {
   color: #6fd6f7;
 }
 
+svg {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  line-height: 1;
+}
+
+footer a.nav-link svg {
+  fill: #6c757d;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  line-height: 1;
+}
+
 .carousel img {
   max-height: 500px;
   margin: 0 auto;
