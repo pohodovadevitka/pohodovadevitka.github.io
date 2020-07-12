@@ -1,29 +1,19 @@
 ---
 ---
-body {
-  background: #fff url(../images/bg.png) repeat-x 0 3px;
-  padding-top: 20px;
-}
 main {
   background-color: #e6efef;
 }
-h1 {
-  color: #f2be2c;
-}
-h2 {
-  color: #6fd6f7;
+h1, h2 {
+  color: #2d1a2e;
 }
 .red {
   color: #cc0000;
 }
-.basic-orange {
-  color: #f2be2c;
+.basic-dark {
+  color: #2d1a2e;
 }
 .basic-green {
-  color: #d8e61f;
-}
-.basic-blue {
-  color: #6fd6f7;
+  color: #b5ca00;
 }
 
 svg {

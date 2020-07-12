@@ -31,12 +31,6 @@ pictures:
   }
 </script>
 
-<h1 class="py-3">PoHodová devítka <small class="text-muted">běžecký závod Velké Bíteše</small></h1>
-
-<p class="lead">
-  Běžecký závod ve Velké Bíteši, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.
-</p>
-
 {% comment %}
 <div class="card mb-3">
   <div class="card-body text-center">
@@ -49,18 +43,13 @@ pictures:
 <div id="carousel" class="carousel slide mb-3" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <picture>
-        <source srcset="/images/logo.svg" type="image/svg+xml" />
-        <source srcset="/images/logo.webp" type="image/webp" />
-        <source srcset="/images/logo.jpg" type="image/jpeg" />
-        <img
-          src="/images/logo.jpg"
-          alt="foto ze závodu"
-          class="d-block img-fluid rounded"
-          width="900"
-          height="500"
-        >
-      </picture>
+      <img
+        src="/images/logo.jpg"
+        alt="foto ze závodu"
+        class="d-block img-fluid rounded"
+        width="900"
+        height="500"
+      >
     </div>
     {% for picture in page.pictures %}
     <div class="carousel-item">
@@ -97,6 +86,12 @@ pictures:
     <span class="sr-only">Vpravo</span>
   </a>
 </div>
+
+<h1 class="py-3 text-center text-bold">PoHodová devítka <small class="h4 text-muted">běžecký závod Velké Bíteše</small></h1>
+
+<p class="lead">
+  Běžecký závod ve Velké Bíteši, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.
+</p>
 
 {% if site.posts %}
 <div class="card-deck">
