@@ -1,0 +1,19 @@
+// it is imported in "../bootstrap/bootstrap.scss"
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+
+$green: #b5ca01;
+$red:   #cc0000;
+$black: #2d1a2e;
+$body-bg: white;
+$body-color: $black;
+
+$theme-colors: (
+    "dark": #707173
+);
+
+$dropdown-bg:                   $dark;
+$dropdown-link-hover-bg:        darken($dark, 5%);
+$dropdown-link-active-bg:       lighten($dark, 5%);
+$navbar-dark-color:             $light;
+$navbar-dark-active-color:      $green;

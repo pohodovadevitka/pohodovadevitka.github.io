@@ -1,0 +1,20 @@
+
+.btn-hot {
+    color: #fff;
+    background-color: #db5566;
+    border-bottom: 2px solid #af4451;
+    :hover,
+    :focus {
+      color: #fff;
+      background-color: #df6a78;
+      border-bottom: 2px solid #b25560;
+      outline: none;
+    }
+    :active,
+    .active {
+      color: #fff;
+      background-color: #c04b59;
+      border-top: 2px solid #9a3c47;
+      margin-top: 2px;
+    }
+  }
