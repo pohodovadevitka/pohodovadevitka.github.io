@@ -30,7 +30,7 @@ plugins:
   - jekyll-sitemap
 
 sass:
-  sass_dir: css
+  sass_dir: _sass
   style: compressed
 
 permalink: pretty
