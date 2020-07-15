@@ -45,6 +45,10 @@ table .number {
   font-size: x-large;
 }
 
+#phd-navbar > ul > li > .nav-link {
+  font-size: 21px;
+}
+
 @media print {
   table.results {
     margin: 0;
