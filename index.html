@@ -43,13 +43,17 @@ pictures:
 <div id="carousel" class="carousel slide mb-3" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img
-        src="/images/logo.jpg"
-        alt="foto ze závodu"
-        class="d-block img-fluid rounded"
-        width="900"
-        height="500"
-      >
+      <picture>
+        <source srcset="/images/logo.webp" type="image/webp" />
+        <source srcset="/images/logo.jpg" type="image/jpeg" />
+        <img
+          src="/images/logo.jpg"
+          alt="foto ze závodu"
+          class="d-block img-fluid rounded"
+          width="900"
+          height="500"
+        >
+      </picture>
     </div>
     {% for picture in page.pictures %}
     <div class="carousel-item">
