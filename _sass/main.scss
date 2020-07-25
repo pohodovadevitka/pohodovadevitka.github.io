@@ -19,7 +19,11 @@ svg {
   display: inline-block;
   line-height: 1;
 }
-
+.btn svg {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+}
 .btn-success svg,
 .btn-secondary svg,
 .btn-primary svg {
@@ -31,7 +35,31 @@ footer a.nav-link svg {
   width: 2em;
   height: 2em;
 }
-
+/*
+#menu-sponsors {
+  line-height: 80px;
+  text-align: center;
+  a {
+    display: inline-block;
+    margin: 5px;
+    outline: none;
+    text-decoration: none;
+    vertical-align: middle;
+    height: 50px;
+    overflow: hidden;
+  }
+  img {
+    display: block;
+  }
+}
+*/
+#menu-sponsors {
+  a {
+    margin: 5px;
+    outline: none;
+    text-decoration: none;
+  }
+}
 .carousel img {
   max-height: 500px;
   margin: 0 auto;
@@ -68,5 +96,4 @@ table .number {
   }
 }
 
-@import "sponsors";
 
