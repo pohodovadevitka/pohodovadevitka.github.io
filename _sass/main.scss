@@ -27,7 +27,9 @@ svg {
 }
 
 footer a.nav-link svg {
-  fill: #6c757d;
+  fill: $black;
+  width: 2em;
+  height: 2em;
 }
 
 .carousel img {
