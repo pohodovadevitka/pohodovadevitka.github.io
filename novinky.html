@@ -14,7 +14,7 @@ permalink: "/novinky/"
   >
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{ post.title }}</h5>
-      <small>{{ post.date | date_to_string }}</small>
+      <time datetime="{{  post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
     </div>
   </a>
   {% endfor %}
