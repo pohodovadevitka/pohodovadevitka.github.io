@@ -4,8 +4,8 @@
   </div>
   <div class="card-footer">
     <a href="{{ site.posts[include.index].url }}" class="card-link"> Více &raquo; </a>
-    <small class="text-muted float-right">
-      {{ site.posts[include.index].date | date: "%d.%m. %Y" }}
-    </small>
+    <time class="float-right" datetime="{{ site.posts[include.index].date | date_to_xmlschema }}">
+      {{ site.posts[include.index].date | date: "%d.%m.%Y" }}
+    </time>
   </div>
 </div>
