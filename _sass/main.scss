@@ -30,6 +30,10 @@ svg {
   fill: white;
 }
 
+footer {
+  content-visibility: auto;
+}
+
 footer a.nav-link svg {
   fill: $black;
   width: 2em;
