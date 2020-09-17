@@ -3,7 +3,7 @@ layout:      post
 title:       "Změna zázemí závodu a startovního prostoru!"
 published:   true
 description: "Změna zázemí závodu a startovního prostoru!"
-date:        "2020-07-17T08:46:00"
+date:        "2020-09-17T08:46:00"
 ---
 
 DROBNÁ ZMĚNA!
