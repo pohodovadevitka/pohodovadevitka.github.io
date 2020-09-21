@@ -14,6 +14,7 @@ published: public
 <script id="data" type="application/json">
   {
     "genders": [
+      ["A", "Lidový běh"],
       ["F", "Ženy"],
       ["M", "Muži"]
     ],
@@ -32,8 +33,7 @@ published: public
       ["FA",  "F", "9km",   "Ženy „A“",        1986, 2002],
       ["FB",  "F", "9km",   "Ženy „B“",        1976, 1985],
       ["FC",  "F", "9km",   "Ženy „C“",        null, 1975],
-      ["LM",  "M", "1200m", "Lidový běh Muži", null, 2002],
-      ["LF",  "F", "1200m", "Lidový běh Ženy", null, 2002],
+      ["L",   "A", "1200m", "Lidový běh",      null, 2002],
       ["DM",  "M", "1200m", "Dorostenci",      2003, 2007],
       ["DF",  "F", "1200m", "Dorostenky",      2003, 2007],
       ["JM1", "M", "500m",  "Starší žáci",     2008, 2010],
@@ -109,14 +109,14 @@ published: public
       [63,"FC",6,"8","Hana Pelzová",1964,"","1:09:19"],
       [64,"FA",8,"50","Kashmira Vani",1996,"Vlkov","1:14:13"],
       [65,"MA",25,"49","Vojtěch Polách",1992,"Vlkov","1:14:13"],
-      [1,"LM",1,"603","Pavel Plechatý",1982,"Přibyslavice","05:55"],
-      [2,"LF",1,"605","Kateřina Hotárková",1990,"Bítešan","06:13"],
+      [1,"L",1,"603","Pavel Plechatý",1982,"Přibyslavice","05:55"],
+      [2,"L",1,"605","Kateřina Hotárková",1990,"Bítešan","06:13"],
       [3,"DM",1,"606","Jan Krupička",2006,"","06:18"],
       [4,"DF",1,"600","Kristýna Kolářová",2007,"Křoví","06:19"],
       [5,"DF",2,"602","Kristýna Bradáčová",2007,"Křoví","06:20"],
       [6,"DF",3,"608","Magda Jobánková",2007,"","06:55"],
       [7,"DF",4,"609","Hana Ráčková",2006,"","07:27"],
-      [8,"LF",2,"604","Lenka Plechatá",1986,"Křižínkov","07:33"],
+      [8,"L",2,"604","Lenka Plechatá",1986,"Křižínkov","07:33"],
       [9,"DF",5,"607","Dana Ráčková",2007,"","07:39"],
       [10,"DF",6,"601","Mariana Maulénová",2007,"Křoví","07:39"],
       [1,"JM1",1,"422","Tomáš Buršík",2009,"","01:54"],
@@ -173,5 +173,5 @@ published: public
 </script>
 
 {% include results-filter.html %}
-{% include special-category.html female="Monika Tomanová" male="Ondřej Rosa" %}
+{% include special-category.html female="Jana Jeřábková" male="Petr Jeřábek" %}
 {% include categories-2020.html title="Vypsané kategorie" %}
