@@ -134,3 +134,48 @@ date:        "2020-09-23T08:45:00"
 <p>V roce 2021 se těšíme na startu!</p>
 <p class="text-right">za organizátorský tým PH9</p>
 <p class="text-right">Zdeněk Kundera</p>
+
+<div class="row">
+  <figure class="col-md-4">
+      <a href="/images/20200923-pohodova-devitka-2020-02.jpg">
+          <picture>
+            <img src="/images/20200923-pohodova-devitka-2020-02-w350.jpg" class="img-fluid img-thumbnail" alt="">
+          <picture>
+      </a>
+  </figure>
+  <figure class="col-md-4">
+      <a href="/images/20200923-pohodova-devitka-2020-03.jpg">
+          <picture>
+            <img src="/images/20200923-pohodova-devitka-2020-03-w350.jpg" class="img-fluid img-thumbnail" alt="">
+          <picture>
+      </a>
+  </figure>
+  <figure class="col-md-4">
+      <a href="/images/20200923-pohodova-devitka-2020-04.jpg">
+          <picture>
+            <img src="/images/20200923-pohodova-devitka-2020-04-w350.jpg" class="img-fluid img-thumbnail" alt="">
+          <picture>
+      </a>
+  </figure>
+  <figure class="col-md-4">
+      <a href="/images/20200923-pohodova-devitka-2020-05.jpg">
+          <picture>
+            <img src="/images/20200923-pohodova-devitka-2020-05-w350.jpg" class="img-fluid img-thumbnail" alt="">
+          <picture>
+      </a>
+  </figure>
+  <figure class="col-md-4">
+      <a href="/images/20200923-pohodova-devitka-2020-06.jpg">
+          <picture>
+            <img src="/images/20200923-pohodova-devitka-2020-06-w350.jpg" class="img-fluid img-thumbnail" alt="">
+          <picture>
+      </a>
+  </figure>
+  <figure class="col-md-4">
+      <a href="/images/20200923-pohodova-devitka-2020-01.jpg">
+          <picture>
+            <img src="/images/20200923-pohodova-devitka-2020-01-w233.jpg" class="img-fluid img-thumbnail" alt="">
+          <picture>
+      </a>
+  </figure>
+</div>
