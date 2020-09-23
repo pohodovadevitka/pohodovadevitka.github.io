@@ -137,44 +137,50 @@ date:        "2020-09-23T08:45:00"
 
 <div class="row">
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-02.jpg">
+      <a href="/images/20200923-pohodova-devitka-2020-02.jpg" title="Ukaž velkou fotku">
           <picture>
-            <img src="/images/20200923-pohodova-devitka-2020-02-w350.jpg" class="img-fluid img-thumbnail" alt="">
+            <source srcset="/images/20200923-pohodova-devitka-2020-02-w350.webp" type="image/webp" />
+            <img src="/images/20200923-pohodova-devitka-2020-02-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-03.jpg">
+      <a href="/images/20200923-pohodova-devitka-2020-03.jpg" title="Ukaž velkou fotku">
           <picture>
-            <img src="/images/20200923-pohodova-devitka-2020-03-w350.jpg" class="img-fluid img-thumbnail" alt="">
+            <source srcset="/images/20200923-pohodova-devitka-2020-03-w350.webp" type="image/webp" />
+            <img src="/images/20200923-pohodova-devitka-2020-03-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-04.jpg">
+      <a href="/images/20200923-pohodova-devitka-2020-04.jpg" title="Ukaž velkou fotku">
           <picture>
-            <img src="/images/20200923-pohodova-devitka-2020-04-w350.jpg" class="img-fluid img-thumbnail" alt="">
+            <source srcset="/images/20200923-pohodova-devitka-2020-04-w350.webp" type="image/webp" />
+            <img src="/images/20200923-pohodova-devitka-2020-04-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-05.jpg">
+      <a href="/images/20200923-pohodova-devitka-2020-05.jpg" title="Ukaž velkou fotku">
           <picture>
-            <img src="/images/20200923-pohodova-devitka-2020-05-w350.jpg" class="img-fluid img-thumbnail" alt="">
+            <source srcset="/images/20200923-pohodova-devitka-2020-05-w350.webp" type="image/webp" />
+            <img src="/images/20200923-pohodova-devitka-2020-05-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-06.jpg">
+      <a href="/images/20200923-pohodova-devitka-2020-06.jpg" title="Ukaž velkou fotku">
           <picture>
-            <img src="/images/20200923-pohodova-devitka-2020-06-w350.jpg" class="img-fluid img-thumbnail" alt="">
+            <source srcset="/images/20200923-pohodova-devitka-2020-06-w350.webp" type="image/webp" />
+            <img src="/images/20200923-pohodova-devitka-2020-06-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-01.jpg">
+      <a href="/images/20200923-pohodova-devitka-2020-01.jpg" title="Ukaž velkou fotku">
           <picture>
-            <img src="/images/20200923-pohodova-devitka-2020-01-w233.jpg" class="img-fluid img-thumbnail" alt="">
+            <source srcset="/images/20200923-pohodova-devitka-2020-01-w350.webp" type="image/webp" />
+            <img src="/images/20200923-pohodova-devitka-2020-01-w233.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
