@@ -180,7 +180,7 @@ date:        "2020-09-23T08:45:00"
       <a href="/images/20200923-pohodova-devitka-2020-01.jpg" title="Ukaž velkou fotku">
           <picture>
             <source srcset="/images/20200923-pohodova-devitka-2020-01-w350.webp" type="image/webp" />
-            <img src="/images/20200923-pohodova-devitka-2020-01-w233.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
+            <img src="/images/20200923-pohodova-devitka-2020-01-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
