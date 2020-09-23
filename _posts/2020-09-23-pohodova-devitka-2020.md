@@ -6,7 +6,6 @@ description: "PoHodová devítka 2020"
 date:        "2020-09-23T08:45:00"
 ---
 
-<h1>PoHodová devítka 2020</h1>
 <p>Již sedmý ročník PoHodové devítky byl letos, vzhledem ke zrušení bítešských hodů, pouze „Pohodový“. Ovšem řekli
     bychom, že více, než obvykle. Počasí nám jako většinou přálo, sluníčko na září
     až nebývale hřálo. Lehkou komplikací, která se nakonec ukázala být spíše výhodou, bylo na poslední chvíli přemístění
@@ -25,44 +24,42 @@ date:        "2020-09-23T08:45:00"
 <div class="table-responsive">
     <table class="table table-condensed table-bordered table-sm">
         <tr>
-            <td>Dívky</td>
-            <td>2014-2020</td>
+            <td>Dívky (2014-2020)</td>
             <td>Klára Plechatá</td>
             <td>01:12</td>
         </tr>
         <tr>
-            <td>Chlapci</td>
-            <td>2014-2020</td>
+            <td>Chlapci (2014-2020)</td>
             <td>Pavel Dohnal</td>
             <td>01:08</td>
         </tr>
         <tr>
-            <td>Ml. žákyně 2011-2013</td>
+            <td>Ml. žákyně (2011-2013)</td>
             <td>Barbora Krupičková</td>
             <td>01:47</td>
         </tr>
         <tr>
-            <td>Ml. Žáci 2011-2013</td>
+            <td>Ml. Žáci (2011-2013)</td>
             <td>Fanda Buchta</td>
             <td>01:39</td>
         </tr>
         <tr>
-            <td>St. žákyně 2008-2010</td>
+            <td>St. žákyně (2008-2010)</td>
             <td>Klára Smutná</td>
             <td>02:11</td>
         </tr>
         <tr>
-            <td>St. žáci 2008-2010</td>
+            <td>St. žáci (2008-2010)</td>
             <td>Tomáš Buršík</td>
             <td>01:54</td>
         </tr>
         <tr>
-            <td>Dorostenky 2007-2003</td>
+            <td>Dorostenky (2007-2003)</td>
             <td>Kristýna Kolářová</td>
             <td>06:19</td>
         </tr>
         <tr>
-            <td>Dorostenci 2007-2003</td>
+            <td>Dorostenci (2007-2003)</td>
             <td>Jan Krupička</td>
             <td>06:18</td>
         </tr>
