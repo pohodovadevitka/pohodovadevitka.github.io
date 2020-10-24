@@ -36,7 +36,7 @@
       role="menu"
       aria-labelledby="vysledky-top-dropdown"
     >
-      {% for rocnik in site.vysledky %}
+      {% for rocnik in site.vysledky reversed %}
       <li
         class="dropdown-item{% if page.url == rocnik.url %} active{% endif %}"
       >
