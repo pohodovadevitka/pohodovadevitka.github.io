@@ -31,7 +31,7 @@
 
     <title>{{ page.title }} - PoHodová devítka</title>
 
-    <base href="{{ site.url }}">
+    <base href="http://localhost:4000">
 
     {% feed_meta %}
 
@@ -42,11 +42,11 @@
     {% if page.next.url %}
     <link rel="next" href="{{ page.next.url }}">
     {% endif %}
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -68,10 +68,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a href="/" id="logo" class="navbar-brand">
             <picture>
-              <source srcset="/images/logo-top-dark-sm.webp" type="image/webp" />
-              <source srcset="/images/logo-top-dark-sm.jpg" type="image/jpeg" />
+              <source srcset="{{ 'images/logo-top-dark-sm.webp' | relative_url }}" type="image/webp" />
+              <source srcset="{{ 'images/logo-top-dark-sm.jpg' | relative_url }}" type="image/jpeg" />
               <img
-                src="/images/logo-top-dark-sm.jpg"
+                src="{{ 'images/logo-top-dark-sm.jpg' | relative_url }}"
                 alt="logo"
                 title="PoHodová Devítka - běžecký závod Velké Bíteše"
                 class="d-inline d-lg-none"
@@ -80,10 +80,10 @@
               >
             </picture>
             <picture>
-              <source srcset="/images/logo-top-dark-lg.webp" type="image/webp" />
-              <source srcset="/images/logo-top-dark-lg.jpg" type="image/jpeg" />
+              <source srcset="{{ 'images/logo-top-dark-lg.webp' | relative_url }}" type="image/webp" />
+              <source srcset="{{ 'images/logo-top-dark-lg.jpg' | relative_url }}" type="image/jpeg" />
               <img
-                src="/images/logo-top-dark-lg.jpg"
+                src="{{ 'images/logo-top-dark-lg.jpg' | relative_url }}"
                 alt="logo"
                 title="PoHodová Devítka - běžecký závod Velké Bíteše"
                 class="d-none d-lg-inline my-2"
@@ -91,14 +91,14 @@
                 height="45"
               >
             </picture>
-            <span class="sr-only">PoHodová Devítka - běžecký závod Velké Bíteše</span>
+            <span class="visually-hidden">PoHodová Devítka - běžecký závod Velké Bíteše</span>
           </a>
 
           <button
             type="button"
             class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#phd-navbar"
+            data-bs-toggle="collapse"
+            data-bs-target="#phd-navbar"
             aria-controls="phd-navbar"
             aria-expanded="false"
             aria-label="Přepnout navigaci"
@@ -130,8 +130,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/fyzio.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/fyzio.png" alt="Sponzor závodu: Fyzio Loučky" width="192" height="57">
+              <source srcset="{{ 'images/sponsors/fyzio.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/fyzio.png' | relative_url }}" alt="Sponzor závodu: Fyzio Loučky" width="192" height="57">
             </picture>
           </a>
           <a
@@ -141,8 +141,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/fitness-tisnov.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/fitness-tisnov.png" alt="Sponzor závodu: Fitcentrum OLMPIA Tišnov" width="200" height="111">
+              <source srcset="{{ 'images/sponsors/fitness-tisnov.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/fitness-tisnov.png' | relative_url }}" alt="Sponzor závodu: Fitcentrum OLMPIA Tišnov" width="200" height="111">
             </picture>
           </a>
           <a
@@ -152,8 +152,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/kargoma.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/kargoma.png" alt="Sponzor závodu: KARGOMA, s.r.o." width="222" height="49">
+              <source srcset="{{ 'images/sponsors/kargoma.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/kargoma.png' | relative_url }}" alt="Sponzor závodu: KARGOMA, s.r.o." width="222" height="49">
             </picture>
           </a>
           <a
@@ -163,8 +163,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/agfoods.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/agfoods.jpg" alt="Sponzor závodu: AG FOODS Group, a.s." width="216" height="51">
+              <source srcset="{{ 'images/sponsors/agfoods.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/agfoods.jpg' | relative_url }}" alt="Sponzor závodu: AG FOODS Group, a.s." width="216" height="51">
             </picture>
           </a>
           <a
@@ -174,8 +174,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/alfaagro.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/alfaagro.png" alt="Sponzor závodu: Alfa Agro Brno, s.r.o." width="195" height="56">
+              <source srcset="{{ 'images/sponsors/alfaagro.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/alfaagro.png' | relative_url }}" alt="Sponzor závodu: Alfa Agro Brno, s.r.o." width="195" height="56">
             </picture>
           </a>
           <a
@@ -185,8 +185,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/bibusmetals.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/bibusmetals.png" alt="Sponzor závodu: BIBUS METALS s.r.o." width="263" height="42">
+              <source srcset="{{ 'images/sponsors/bibusmetals.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/bibusmetals.png' | relative_url }}" alt="Sponzor závodu: BIBUS METALS s.r.o." width="263" height="42">
             </picture>
           </a>
           <a
@@ -196,8 +196,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/fabory.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/fabory.png" alt="Sponzor závodu: Fabory, s.r.o." width="249" height="44">
+              <source srcset="{{ 'images/sponsors/fabory.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/fabory.png' | relative_url }}" alt="Sponzor závodu: Fabory, s.r.o." width="249" height="44">
             </picture>
           </a>
           <a
@@ -207,8 +207,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/pbsvb.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/pbsvb.png" alt="Sponzor závodu: První brněnská strojírna Velká Bíteš, a.s." width="249" height="44">
+              <source srcset="{{ 'images/sponsors/pbsvb.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/pbsvb.png' | relative_url }}" alt="Sponzor závodu: První brněnská strojírna Velká Bíteš, a.s." width="249" height="44">
             </picture>
           </a>
           <a
@@ -218,8 +218,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/promatservis.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/promatservis.jpg" alt="Sponzor závodu: Promat servis, s.r.o." width="197" height="56">
+              <source srcset="{{ 'images/sponsors/promatservis.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/promatservis.jpg' | relative_url }}" alt="Sponzor závodu: Promat servis, s.r.o." width="197" height="56">
             </picture>
           </a>
           <a
@@ -229,8 +229,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/vbites.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/vbites.png" alt="Sponzor závodu: Velká Bíteš" width="151" height="73">
+              <source srcset="{{ 'images/sponsors/vbites.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/vbites.png' | relative_url }}" alt="Sponzor závodu: Velká Bíteš" width="151" height="73">
             </picture>
           </a>
           <a
@@ -240,8 +240,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/primapol.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/primapol.png" alt="Sponzor závodu: Primapol-Metal-Spot, s.r.o." width="235" height="47">
+              <source srcset="{{ 'images/sponsors/primapol.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/primapol.png' | relative_url }}" alt="Sponzor závodu: Primapol-Metal-Spot, s.r.o." width="235" height="47">
             </picture>
           </a>
           <a
@@ -251,8 +251,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/ickk.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/ickk.png" alt="Sponzor závodu: Informační centrum - Klub kultury - Velká Bíteš" width="172" height="64">
+              <source srcset="{{ 'images/sponsors/ickk.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/ickk.png' | relative_url }}" alt="Sponzor závodu: Informační centrum - Klub kultury - Velká Bíteš" width="172" height="64">
             </picture>
           </a>
           <a
@@ -262,8 +262,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/mtmetal.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/mtmetal.png" alt="Sponzor závodu: MT-Metal Trade, s.r.o." width="105" height="104">
+              <source srcset="{{ 'images/sponsors/mtmetal.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/mtmetal.png' | relative_url }}" alt="Sponzor závodu: MT-Metal Trade, s.r.o." width="105" height="104">
             </picture>
           </a>
           <a
@@ -273,8 +273,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/zamecnictvinemec.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/zamecnictvinemec.png" alt="Sponzor závodu: Zámečnictví Němec, s.r.o." width="212" height="52">
+              <source srcset="{{ 'images/sponsors/zamecnictvinemec.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/zamecnictvinemec.png' | relative_url }}" alt="Sponzor závodu: Zámečnictví Němec, s.r.o." width="212" height="52">
             </picture>
           </a>
           <a
@@ -284,8 +284,8 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/dynamicmetals.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/dynamicmetals.png" alt="Sponzor závodu: Dynamic Metals Ltd" width="289" height="38">
+              <source srcset="{{ 'images/sponsors/dynamicmetals.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/dynamicmetals.png' | relative_url }}" alt="Sponzor závodu: Dynamic Metals Ltd" width="289" height="38">
             </picture>
           </a>
           <a
@@ -295,41 +295,41 @@
             rel="noopener noreferrer"
           >
             <picture>
-              <source srcset="/images/sponsors/slamamilan.webp" type="image/webp">
-              <img loading="lazy" src="/images/sponsors/slamamilan.png" alt="Sponzor závodu: UZENÁŘSTVÍ A LAHŮDKY SLÁMA s.r.o." width="124" height="89">
+              <source srcset="{{ 'images/sponsors/slamamilan.webp' | relative_url }}" type="image/webp">
+              <img loading="lazy" src="{{ 'images/sponsors/slamamilan.png' | relative_url }}" alt="Sponzor závodu: UZENÁŘSTVÍ A LAHŮDKY SLÁMA s.r.o." width="124" height="89">
             </picture>
           </a>
-        </div>        
+        </div>
 
         <ul class="nav justify-content-center pb-3">
           <li class="nav-item">
             <a class="nav-link text-secondary" href="{{ site.url }}" title="Oficiální web závodu">
               {% include icon-home.svg %}
-              <span class="sr-only">Oficiální web závodu</span>
+              <span class="visually-hidden">Oficiální web závodu</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="{{ site.facebook_url }}" title="Facebook závodu">
               {% include icon-facebook.svg %}
-              <span class="sr-only">Facebook závodu</span>
+              <span class="visually-hidden">Facebook závodu</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="{{ site.twitter_url }}" title="Twitter závodu">
               {% include icon-twitter.svg %}
-              <span class="sr-only">Twitter závodu</span>
+              <span class="visually-hidden">Twitter závodu</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="mailto:{{ site.email }}" title="E-mail závodu">
               {% include icon-envelope.svg %}
-              <span class="sr-only">E-mail závodu</span>
+              <span class="visually-hidden">E-mail závodu</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="https://github.com/pohodovadevitka/pohodovadevitka.github.io" title="Zdrojový kód">
               {% include icon-github.svg %}
-              <span class="sr-only">Zdrojový kód</span>
+              <span class="visually-hidden">Zdrojový kód</span>
             </a>
           </li>
         </ul>
@@ -341,13 +341,7 @@
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
-    <script>
-      $(function () {     
-        $('abbr').tooltip()
-      })
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous"></script>
   </body>
 </html>

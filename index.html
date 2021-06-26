@@ -40,7 +40,7 @@ pictures:
 </div>
 -->
 
-<div id="carousel" class="carousel slide mb-3" data-ride="carousel">
+<div id="carousel" class="carousel slide mb-3" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <picture>
@@ -72,24 +72,14 @@ pictures:
     </div>
     {% endfor %}
   </div>
-  <a
-    class="carousel-control-prev"
-    href="#carousel"
-    role="button"
-    data-slide="prev"
-  >
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Vlevo</span>
-  </a>
-  <a
-    class="carousel-control-next"
-    href="#carousel"
-    role="button"
-    data-slide="next"
-  >
+    <span class="visually-hidden">Vlevo</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Vpravo</span>
-  </a>
+    <span class="visually-hidden">Vpravo</span>
+  </button>
 </div>
 
 <h1 class="py-3 text-center text-bold">PoHodová devítka <small class="h4 text-muted">běžecký závod Velké Bíteše</small></h1>
@@ -98,15 +88,16 @@ pictures:
   Běžecký závod ve Velké Bíteši, který se pořádá v září, vždy po zdejších hodech. Hlavní trasa měří 9km, děti mohou běžet kratší trasy.
 </p>
 
-{% if site.posts %}
-<div class="card-deck">
-  {% if site.posts.size > 0 %} {% include post-card.html index=0 %} {% endif %}
-  {% if site.posts.size > 1 %}
-  <div class="w-100 d-none d-sm-block d-lg-none"></div>
-  {% include post-card.html index=1 %} {% endif %} {% if site.posts.size > 2 %}
-  <div class="w-100 d-none d-sm-block d-lg-none"></div>
-  {% include post-card.html index=2 %} {% endif %}
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    {% include post-card.html index=0 %}
+  </div>
+  <div class="col">
+    {% include post-card.html index=1 %}
+  </div>
+  <div class="col">
+    {% include post-card.html index=2 %}
+  </div>
 </div>
-{% endif %}
 
 <!-- <script async src="/js/homepage.js"></script> -->
