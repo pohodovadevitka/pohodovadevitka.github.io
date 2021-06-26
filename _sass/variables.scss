@@ -6,9 +6,17 @@ $red:   #cc0000;
 $black: #2d1a2e;
 $body-bg: white;
 $body-color: $black;
+$dark: #707173;
 
 $theme-colors: (
-    "dark": #707173
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $green,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $red,
+  "light":      $light,
+  "dark":       $dark
 );
 
 $dropdown-bg:                   $dark;

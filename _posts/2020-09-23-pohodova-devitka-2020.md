@@ -132,55 +132,55 @@ date:        "2020-09-23T08:45:00"
     mimo jiné najdete kompletní výsledky všech závodů a odkazy na fotogalerie. Za poskytnutí zázemí děkujeme FC PBS
     Velká Bíteš. Nám i běžcům se nové zázemí líbilo a bude-li to možné, rádi jej zachováme i pro další ročníky.</p>
 <p>V roce 2021 se těšíme na startu!</p>
-<p class="text-right">za organizátorský tým PH9</p>
-<p class="text-right">Zdeněk Kundera</p>
+<p class="text-end">za organizátorský tým PH9</p>
+<p class="text-end">Zdeněk Kundera</p>
 
 <div class="row">
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-02.jpg" title="Ukaž velkou fotku">
+      <a href="{{ 'images/20200923-pohodova-devitka-2020-02.jpg' | relative_url }}" title="Ukaž velkou fotku">
           <picture>
-            <source srcset="/images/20200923-pohodova-devitka-2020-02-w350.webp" type="image/webp" />
-            <img src="/images/20200923-pohodova-devitka-2020-02-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
+            <source srcset="{{ 'images/20200923-pohodova-devitka-2020-02-w350.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ 'images/20200923-pohodova-devitka-2020-02-w350.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-03.jpg" title="Ukaž velkou fotku">
+      <a href="{{ 'images/20200923-pohodova-devitka-2020-03.jpg' | relative_url }}" title="Ukaž velkou fotku">
           <picture>
-            <source srcset="/images/20200923-pohodova-devitka-2020-03-w350.webp" type="image/webp" />
-            <img src="/images/20200923-pohodova-devitka-2020-03-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
+            <source srcset="{{ 'images/20200923-pohodova-devitka-2020-03-w350.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ 'images/20200923-pohodova-devitka-2020-03-w350.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-04.jpg" title="Ukaž velkou fotku">
+      <a href="{{ 'images/20200923-pohodova-devitka-2020-04.jpg' | relative_url }}" title="Ukaž velkou fotku">
           <picture>
-            <source srcset="/images/20200923-pohodova-devitka-2020-04-w350.webp" type="image/webp" />
-            <img src="/images/20200923-pohodova-devitka-2020-04-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
+            <source srcset="{{ 'images/20200923-pohodova-devitka-2020-04-w350.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ 'images/20200923-pohodova-devitka-2020-04-w350.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-05.jpg" title="Ukaž velkou fotku">
+      <a href="{{ 'images/20200923-pohodova-devitka-2020-05.jpg' | relative_url }}" title="Ukaž velkou fotku">
           <picture>
-            <source srcset="/images/20200923-pohodova-devitka-2020-05-w350.webp" type="image/webp" />
-            <img src="/images/20200923-pohodova-devitka-2020-05-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
+            <source srcset="{{ 'images/20200923-pohodova-devitka-2020-05-w350.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ 'images/20200923-pohodova-devitka-2020-05-w350.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-06.jpg" title="Ukaž velkou fotku">
+      <a href="{{ 'images/20200923-pohodova-devitka-2020-06.jpg' | relative_url }}" title="Ukaž velkou fotku">
           <picture>
-            <source srcset="/images/20200923-pohodova-devitka-2020-06-w350.webp" type="image/webp" />
-            <img src="/images/20200923-pohodova-devitka-2020-06-w350.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
+            <source srcset="{{ 'images/20200923-pohodova-devitka-2020-06-w350.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ 'images/20200923-pohodova-devitka-2020-06-w350.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
   <figure class="col-md-4">
-      <a href="/images/20200923-pohodova-devitka-2020-01.jpg" title="Ukaž velkou fotku">
+      <a href="{{ 'images/20200923-pohodova-devitka-2020-01.jpg' | relative_url }}" title="Ukaž velkou fotku">
           <picture>
-            <source srcset="/images/20200923-pohodova-devitka-2020-01-w233.webp" type="image/webp" />
-            <img src="/images/20200923-pohodova-devitka-2020-01-w233.jpg" class="img-fluid img-thumbnail" alt="Foto ze závodu">
+            <source srcset="{{ 'images/20200923-pohodova-devitka-2020-01-w233.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ 'images/20200923-pohodova-devitka-2020-01-w233.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Foto ze závodu">
           </picture>
       </a>
   </figure>
