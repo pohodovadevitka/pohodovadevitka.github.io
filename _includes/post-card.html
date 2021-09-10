@@ -1,11 +1,11 @@
 <div class="card">
   <div class="card-body">
     <p class="card-title">{{ site.posts[include.index].title }}</p>
+    <time class="float-end small" datetime="{{ site.posts[include.index].date | date_to_xmlschema }}">
+      {{ site.posts[include.index].date | date: "%d.%m.%Y" }}
+    </time>
   </div>
   <div class="card-footer">
     <a href="{{ site.posts[include.index].url }}" class="card-link"> Více &raquo; </a>
-    <time class="float-end" datetime="{{ site.posts[include.index].date | date_to_xmlschema }}">
-      {{ site.posts[include.index].date | date: "%d.%m.%Y" }}
-    </time>
   </div>
 </div>
