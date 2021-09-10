@@ -33,13 +33,11 @@ layout: default
 </script>
 
 <article class="post">
-  <header>
-    <div class="text-muted text-end">
-      Publikováno
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%-m.%Y %k:%M" }}</time>
-    </div>
-    <h1 class="py-3">{{ page.title }}</h1>
-  </header>
+  <div class="text-muted text-end">
+    Publikováno
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%-m.%Y %k:%M" }}</time>
+  </div>
+  <h1 class="py-3">{{ page.title }}</h1>
 
   <div id="article">
     {{ content }}
