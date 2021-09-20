@@ -61,8 +61,8 @@ Result.prototype.hide = function () {
 Result.prototype._render = function () {
   var e = document.createElement("tr")
   e.style.display = "none"
-  var time = this.time === "DNF"
-    ? "<abbr title=\"nedokončil(a) závod\">DNF</abbr>"
+  var time = this.time === "DNF" ? "<abbr title=\"nedokončil(a) závod\">DNF</abbr>"
+    : this.time === "DNS" ? "<abbr title=\"nevystartoval(a)\">DNS</abbr>"
     : "<b>" + this.time + "</b>"
   e.innerHTML = [
       "<td>", (this.positionAbs || ""), "</td>",
