@@ -2,17 +2,17 @@
   <div class="row g-3">
     <div class="col-md-4 mb-3">
       <label for="race" class="form-label">Závod:</label>
-      <select id="race" class="form-control"></select>
+      <select id="race" class="form-select"></select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="gender" class="form-label">Pohlaví:</label>
-      <select id="gender" class="form-control">
+      <select id="gender" class="form-select">
         <option value="">- všichni -</option>
       </select>
     </div>
     <div class="col-md-4 mb-3">
       <label for="category" class="form-label">Kategorie:</label>
-      <select id="category" class="form-control">
+      <select id="category" class="form-select">
         <option value="">- všichni -</option>
         <optgroup label="Ženy" data-gender="F" id="female-categories"></optgroup>
         <optgroup label="Muži" data-gender="M" id="male-categories"></optgroup>
@@ -25,10 +25,10 @@
   <table class="table table-sm table-hover results">
     <thead>
       <tr>
-        <th><abbr title="absolutní pořadí">poř.</abbr></th>
-        <th><abbr title="kategorie">kat.</abbr></th>
-        <th><abbr title="pořadí v kategorii">poř.&nbsp;k.</abbr></th>
-        <th><abbr title="startovní číslo">s.&nbsp;č.</abbr></th>
+        <th><abbr data-bs-toggle="tooltip" title="absolutní pořadí">poř.</abbr></th>
+        <th><abbr data-bs-toggle="tooltip" title="kategorie">kat.</abbr></th>
+        <th><abbr data-bs-toggle="tooltip" title="pořadí v kategorii">poř.&nbsp;k.</abbr></th>
+        <th><abbr data-bs-toggle="tooltip" title="startovní číslo">s.&nbsp;č.</abbr></th>
         <th class="name">jméno</th>
         <th class="number">čas</th>
       </tr>
