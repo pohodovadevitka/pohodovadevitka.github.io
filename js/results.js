@@ -61,9 +61,6 @@ Result.prototype.hide = function () {
 Result.prototype._render = function () {
   var e = document.createElement("tr")
   e.style.display = "none"
-  var time = this.time === "DNF" ? "<abbr title=\"nedokončil(a) závod\">DNF</abbr>"
-    : this.time === "DNS" ? "<abbr title=\"nevystartoval(a)\">DNS</abbr>"
-    : "<b>" + this.time + "</b>"
   e.innerHTML = [
       "<td>", (this.positionAbs || ""), "</td>",
       "<td>", this.category, "</td>",
@@ -72,9 +69,19 @@ Result.prototype._render = function () {
       "<td class=\"name\">",
         "<b>", this.name, "</b> (", this.year, ") ", this.club,
       "</td>",
-      "<td class=\"number\">", time, "</td>"
+      "<td class=\"number\">", this._renderTime(), "</td>"
   ].join("")
   return e
+}
+Result.prototype._renderTime = function () {
+  switch (this.time) {
+    case "DNF":
+      return "<abbr title=\"nedokončil(a) závod\">DNF</abbr>"
+    case "DNS":
+      return "<abbr title=\"nevystartoval(a)\">DNS</abbr>"
+    default:
+      return "<b>" + this.time + "</b>"
+  }
 }
 
 function addEvent(event, element, callback) {
@@ -87,7 +94,16 @@ function addEvent(event, element, callback) {
   }
 }
 
+function initializeTooltips() {
+  return [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    .map(function (element) {
+      return new bootstrap.Tooltip(element)
+    })
+}
+
 addEvent("load", window, function () {
+  initializeTooltips();
+
   var $category = document.getElementById("category")
   var $gender = document.getElementById("gender")
   var $race = document.getElementById("race")
